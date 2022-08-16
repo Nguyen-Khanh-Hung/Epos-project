@@ -1,0 +1,241 @@
+#btn-menu{
+    font-size: 1.8rem;
+    margin-left: 15px;
+    border: none;
+    color: var(--text-color);
+    background-color: transparent;
+    cursor: pointer;
+}
+.container__overlay{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 100%;
+    display: none;
+    cursor: pointer;
+}
+.container__overlay.active{
+    display: block;
+    z-index: 3;
+}
+
+/* MODAL */
+.modal-menu{
+    position: fixed;
+    height: 100%;
+    width: 280px;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    transform: translateX(-150%);
+}
+.modal-menu.active{
+    transform: translateX(0);
+    z-index: 9;
+    transition: all 0.5s;
+}
+.menuList{
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.menuList>li{
+   padding-top: 25px;
+}
+.menuList>li>a{
+    font-size:1.6rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+.menuList>li>a:hover{
+    color: var(--replace-color);
+}
+.memuClose{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.memuClose a{
+    border: none;
+    font-size: 2.7rem;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+/* Modal settings */
+#modal-setting{
+    position: fixed;
+    /* top: 120%; */
+    right: 4%;
+    width: 300px;
+    background-color: #fff;
+    display: none;
+    z-index: 100;
+    animation: modalFadein ease-in-out 0.3s;
+}
+.js-btn-setting{
+    background-color: transparent;
+    border: 2px solid #e8e8e8;
+    width: 30px;
+}
+#option-log{
+    cursor: pointer;
+}
+.js-style.active{
+    color: red;
+
+}
+#modal-setting.active{
+   display: block;
+   z-index: 100;
+}
+.modal-setting__position{
+padding: 40px;
+}
+.modal-setting__position h4{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #e8e8e8;
+    color: var(--text-color);
+}
+.modal-setting__position>ul>li>a{
+    color: var(--content-color);
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+.modal-setting__position>ul>li>a:hover{
+    color: var(--replace-color);
+}
+/* Modal FORM LOGIN/REGISTER */
+.modal-form__account{
+    position: fixed;
+    width: 550px;
+    max-width: 100%;
+    height: 560px;
+    inset: 0;
+    margin: auto;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    z-index: 1000;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.modal-form__account.active{
+    display: block;
+    animation: modalFadein ease-in-out 0.3s;
+}
+.transform-method{
+    margin-top: 30px;
+}
+.transform-log.active{
+    color: var(--replace-color);
+}
+/* register form */
+.modal__account{
+    padding: 25px 60px;
+}
+.modal__account .head-text{
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+.modal__account .head-text h2{
+   font-size: 2.4rem;
+   color: var(--text-color);
+   margin-bottom: 10px;
+}
+.modal__account .head-text p{
+    font-size: 1.4rem;
+ }
+.modal__account .btn-log{
+    margin-top: 20px;
+}
+.modal__account .head-text button{
+    font-size: 1.8rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.form-log{
+    display: none;
+}
+.form-log.active{
+    display: block;
+}
+#form-login{
+    text-align: left; 
+    margin-top: 50px;
+}
+#form-login input{
+    padding: 12px 10px;
+    width: 100%;
+    margin:20px 0 ;
+    border:1px solid #e8e8e8;
+    border-radius: 2px;
+}
+#form-login label{
+  font-size: 1.6rem;
+}
+
+.form-log_login button{
+    padding: 10px 50px;
+    border: none;
+}
+.form-log_login{
+   height: 40px;
+   line-height: 40px;
+   margin-top: 10px;
+}
+.form-log_login a{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+#form-signup{
+    margin-top: 25px;
+    
+}
+#form-signup input{
+    padding: 10px 10px;
+    width: 100%;
+    margin: 12px 0;
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+}
+#form-signup label{
+  font-size: 1.6rem;
+}
+
+.form-log_login button{
+    padding: 10px 50px;
+}
+.form-log_login{
+   height: 40px;
+   line-height: 40px;
+}
+.form-log_login a{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.close-form{
+    position: absolute;
+    top: 30px;
+    right: 30px
+}
+#close-form{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+#close-form:hover{
+    color: var(--replace-color);
+}
+.close-form__icon{
+    font-size: 2.6rem;
+    font-weight: 600;
+}
