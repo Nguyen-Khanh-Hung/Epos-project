@@ -33,6 +33,7 @@ function showSettings() {
     ELEMENT_MENU_SETTINGS.classList.toggle("active");
     ELEMENT_OVERLAY.classList.toggle("active")
     ELEMENT_SETTINGS_BTN_RED.classList.toggle("active");
+    ELEMENT_MODAL_LOGIN.style.display = "block";
     
 }
 
@@ -64,4 +65,5 @@ function closeForm(){
     ELEMENT_LOGIN.style.display = "block";
     ELEMENT_SIGNUP.style.display = "none";
     ELEMENT_TRANSFORM_SIGNUP.style.color = "var(--text-color)";
+    ELEMENT_MODAL_LOGIN.style.display = "none";
 }

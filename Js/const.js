@@ -19,6 +19,7 @@ const ELEMENT_BTN_SETTINGS      =ELEMENT_HEADER_FUNCTION .querySelector(".js-btn
 const ELEMENT_SETTINGS_BTN_RED  =ELEMENT_BTN_SETTINGS .querySelector(".js-style")
 
 // XỬ LÝ MODAL FORM LOG
+const ELEMENT_MODAL_LOGIN       =document.querySelector(".js-modal-login")
 const ELEMENT_MODAL_FORM_LOG    =document.querySelector(".modal-form__account")
 const ELEMENT_FORM_LOGIN        =ELEMENT_MODAL_FORM_LOG.querySelector(".modal__account")
 const ELEMENT_BUTTON_CLOSE_FORM =ELEMENT_MODAL_FORM_LOG.querySelector("#close-form")

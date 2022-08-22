@@ -108,16 +108,29 @@ padding: 40px;
     color: var(--replace-color);
 }
 /* Modal FORM LOGIN/REGISTER */
-.modal-form__account{
+.modal-login{
     position: fixed;
-    width: 550px;
-    max-width: 100%;
-    height: 575px;
-    inset: 0;
-    margin: auto;
-    display: none;
-    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
     justify-content: center;
+    align-items:center;
+    z-index: 80;
+    display: none;
+}
+.modal-form__account{
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    max-width: 1200px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    display: none;
     background-color: #fff;
     z-index: 1000;
     border-radius: 3px;
@@ -125,7 +138,7 @@ padding: 40px;
 }
 .modal-form__account.active{
     display: block;
-    animation: modalFadein ease-in-out 0.3s;
+    
 }
 .transform-method{
     margin-top: 30px;
