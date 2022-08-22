@@ -1,0 +1,11 @@
+.owl-nav{
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+    width: 102%;
+    transform: translateY(-150%);
+    transform: translateX(-1%);
+}
+
+/*  */
