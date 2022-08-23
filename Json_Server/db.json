@@ -1,0 +1,13 @@
+{
+    "products": [
+      { "id": 1,"img":"./Assets/img/SONY XBR.jpg", "title": "json-server", "author": "typicode" },
+      { "id": 2,"img":"source2", "title": "tui là hưng", "author": "typicode" },
+      { "id": 3,"img":"source4", "title": "json-server", "author": "typicode" },
+      { "id": 4,"img":"source5", "title": "json-server", "author": "typicode" },
+      { "id": 5,"img":"source6", "title": "json-server", "author": "typicode" }
+    ],
+    "comments": [
+      { "id": 1, "body": "some comment", "postId": 1 }
+    ],
+    "profile": { "name": "typicode" }
+  }

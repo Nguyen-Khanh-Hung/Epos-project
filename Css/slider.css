@@ -1,3 +1,12 @@
+#slider .owl-nav{
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    transform: translateY(-150%);
+    transform: translateX(2.8%);
+}
 .owl-nav{
     position: absolute;
     top: 40%;
@@ -9,3 +18,12 @@
 }
 
 /*  */
+.owl-carousel.owl-hidden {
+    opacity: unset;
+}
+.owl-carousel-1.owl-loaded {
+    display: none;
+}
+.owl-dots{
+    margin-top: 15px;
+}

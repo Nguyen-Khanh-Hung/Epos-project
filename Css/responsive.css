@@ -84,4 +84,12 @@
         top: 30px!important;
         left: 15px!important;
     }
+    .product-effect:hover ~label{
+        opacity: 1;
+        transform: translateY(-100%)!important;
+    }
+    .add-product:hover{
+        opacity: 1;
+        transform: translateY(-100%)!important;
+    }
 }

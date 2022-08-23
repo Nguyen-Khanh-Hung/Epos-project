@@ -24,8 +24,8 @@
         margin:10,
         nav:true,
         navText:[
-        '<i style="font-size:3rem" class="fa-solid fa-circle-chevron-left"></i>',
-        '<i style="font-size:3rem"  class="fa-solid fa-circle-chevron-right"></i>'
+        '<div"><i style="font-size:3rem" class="fa-solid fa-circle-chevron-left"></i></div>',
+        '<div><i style="font-size:3rem"  class="fa-solid fa-circle-chevron-right"></i></div>'
         ],
         responsive:{
         0:{
@@ -40,14 +40,14 @@
         }
     }
 })
-  //for testimonial
+  //for slider
 	$('#slider').owlCarousel({
         loop:false,
         margin:10,
         nav:true,
         navText:[
-        '<i style="font-size:3rem" class="fa-solid fa-angle-left"></i>',
-        '<i style="font-size:3rem" class="fa-solid fa-angle-right"></i>',
+        '<div"><i style="font-size:3rem" class="fa-solid fa-angle-left"></i></div>',
+        '<div><i style="font-size:3rem" class="fa-solid fa-angle-right"></i></div>',
         ],
         responsive:{
         0:{
@@ -95,24 +95,21 @@
                                         <li><a href="">Brushes Kits</a></li>
                                         <li><a href="">Eye Brushes</a></li>
                                         <li><a href="">Face Brushes</a></li>
-                                        <li><a href="">Lip Brushes</a></li>
-                            
+                                        <li><a href="">Lip Brushes</a></li>          
                                     </ul>
                                     <ul class="child__shop-list">
                                         <li class="chill__h3"><h3>Living room</h3></li>                                      
                                         <li><a href="">Handbag</a></li>
                                         <li><a href="">Kids' Table</a></li>
                                         <li><a href="">Clothing</a></li>
-                                        <li><a href="">Shoes</a></li>
-                            
+                                        <li><a href="">Shoes</a></li>          
                                     </ul>
                                     <ul class="child__shop-list">
                                         <li class="chill__h3"><h3>Decoration</h3></li> 
                                         <li><a href="">Face Palettes</a></li>
                                         <li><a href="">Face Primer</a></li>
                                         <li><a href="">Lipstick </a></li>
-                                        <li><a href="">Mascara</a></li>
-                            
+                                        <li><a href="">Mascara</a></li>   
                                     </ul>
                                     <ul class="child__shop-list">
                                         <li class="chill__h3"><h3>Storage</h3></li> 
@@ -122,8 +119,7 @@
                                         <li><a href="">iPad & Tablet Accessories</a></li>
                                        
                                     </ul>
-                                </ul>
-                                
+                                </ul>   
                             </li>
                             <li class="header__nav-item header__nav-accessories" >
                                 <a href="" class="header__nav-link">ACCESSORIES
@@ -152,10 +148,8 @@
                             </li>
                             <li class="header__nav-item">
                                 <a href="" class="header__nav-link">BLOG</a>
-                            </li>
-                            
+                            </li>  
                         </ul>
-
                     </div>
                     <div class="header__function parent">
                         <ul class="header__function-icon">
@@ -179,7 +173,7 @@
                             <div class="modal-setting__position">
                                 <ul class="account">
                                     <h4> My account</h4>
-                                    <li id="option-log" onclick="showLog()"><a>Login/Register</a> </li>
+                                    <li id="option-log" onclick="showForm()"><a>Login/Register</a> </li>
                                 </ul>
                                 <ul class="currency">
                                     <h4>currency</h4>
@@ -191,15 +185,13 @@
                                     <li><a href=""><img src="./Assets/img/flag England.png" alt=""> English</a></li>
                                     <li><a href=""><img src="./Assets/img/Flag Germany.png" alt=""> Germany</a></li>
                                 </ul>
-                            </div>
-                           
+                            </div>                      
                         </div>
-
                     </div>
                 </div>
             </div>
         </header>
-        <div id="slider" class="hehe owl-carousel owl-theme">    
+        <div id="slider" class="owl-carousel owl-theme">    
                 <div class="slider__parent">
                     <img class="slider-image" src="./Assets/img/oclock.jpg" alt="">
                     <div class="slider__text">
@@ -210,8 +202,7 @@
                         <button class="slider__button">
                             <a href="">+ SHOPPING NOW</a>
                         </button>
-                    </div>
-                   
+                    </div>                  
                 </div>
                 <div class="slider__parent">
                     <img class="slider-image" src="./Assets/img/slider_sofa.jpg" alt="">
@@ -239,8 +230,7 @@
                     </div>
                    
                 </div>
-            </div>
-       
+            </div>     
         <div id="content">
             <div class="typical-product">
                 <div class="grid wide">
@@ -299,12 +289,10 @@
                
             </div>
             <div id="product-lists">
-                <div class="product-tab active">
-                    <div class="grid wide">
-                        <div class="row products parent owl-carousel-1 owl-carousel">
+                <div class="product-tab active owl-carousel-1 owl-carousel owl-theme grid wide product-effect">    
                             <div class="parent">       
                              <div class="product-effect">
-                                <img class="image" src="./Assets/img/SONY XBR.jpg" alt="">      
+                              <div><img class="image product-effect" src="./Assets/img/SONY XBR.jpg" alt=""></div>        
                                 <div class="flex">
                                     <p style="color: #929292;margin-top: 15px;">Apple</p>
                                     <div class="star">
@@ -320,8 +308,7 @@
                                 </div>
                                 <div style="display: flex;">
                                     <p class="product-price">$78.80</p>
-                                    <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
-                                    
+                                    <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>   
                                 </div>
                             </div>
                                 <label class="add-product">
@@ -366,8 +353,8 @@
                                         <a href=""><i class="fa-solid fa-list"></i></a> 
                                         <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
                                      </label>
-                               </div>
-                               <div class="parent">       
+                            </div>
+                            <div class="parent">       
                                 <div class="product-effect">
                                    <img class="image" src="./Assets/img/đồng hồ cát.jpg" alt="">
                                    <div class="flex">
@@ -393,8 +380,8 @@
                                         <a href=""><i class="fa-solid fa-list"></i></a> 
                                         <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
                                      </label>
-                               </div>
-                               <div class="parent">       
+                            </div>
+                            <div class="parent">       
                                 <div class="product-effect">
                                    <img class="image" src="./Assets/img/bluetoothspeaker.jpg" alt="">
                                    <div class="sale-product">
@@ -425,8 +412,8 @@
                                         <a href=""><i class="fa-solid fa-list"></i></a> 
                                         <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
                                      </label>
-                               </div>
-                               <div class="parent">       
+                            </div>
+                            <div class="parent">       
                                 <div class="product-effect">
                                    <img class="image" src="./Assets/img/AppleIphone.jpg" alt="">
                                    <div class="sale-product">
@@ -457,8 +444,8 @@
                                         <a href=""><i class="fa-solid fa-list"></i></a> 
                                         <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
                                      </label>
-                               </div>
-                               <div class="parent">       
+                            </div>
+                            <div class="parent">       
                                 <div class="product-effect">
                                    <img class="image" src="./Assets/img/beatsSolowireless.jpg" alt="">
                                    <div class="sale-product">
@@ -489,580 +476,582 @@
                                         <a href=""><i class="fa-solid fa-list"></i></a> 
                                         <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
                                      </label>
-                               </div>
+                            </div>
+                </div>
+                <div class="product-tab owl-carousel-1 owl-carousel owl-theme grid wide">    
+                    <div class="parent">       
+                     <div class="product-effect">
+                        <img class="image" src="./Assets/img/SONY XBR.jpg" alt="">      
+                        <div class="flex">
+                            <p style="color: #929292;margin-top: 15px;">Apple</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star star--active"></i>
+                                <i class="fa-solid fa-star star--active"></i>
+                                <i class="fa-solid fa-star star--active"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                        </div>
+                        <div class="product-name">
+                            <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
+                        </div>
+                        <div style="display: flex;">
+                            <p class="product-price">$78.80</p>
+                            <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
+                            
                         </div>
                     </div>
-                </div>
-                <div class="product-tab">
-                    <div class="grid wide">
-                        <div class="row products owl-carousel-1 owl-carousel parent">
-                            <div class="parent">       
-                             <div class="product-effect">
-                                <img class="image" src="./Assets/img/Lọ.jpg" alt="">      
-                                <div class="flex">
-                                    <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                    <div class="star">
-                                        <i class="fa-solid fa-star star--active"></i>
-                                        <i class="fa-solid fa-star star--active"></i>
-                                        <i class="fa-solid fa-star star--active"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                    </div>
-                                </div>
-                                <div class="product-name">
-                                    <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                </div>
-                                <div style="display: flex;">
-                                    <p class="product-price">$78.80</p>
-                                    <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>                   
-                                </div>
-                            </div>
-                                <label class="add-product">
-                                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                    <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                     <a href=""><i class="fa-solid fa-list"></i></a> 
-                                     <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                  </label>
-                            </div>
-                            <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/SONY XBR.jpg" alt="">
-                                   <div class="sale-product">
-                                       <span>-14%</span>
-                                   </div>
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                          
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Roush Mustang 4-Piston Black Front Brake Kit</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$85.80</p>
-                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$140.00</span>
-                                       
-                                   </div>
-                               </div>
-                         
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                               </div>
-                               <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/oclock-wood.jpg" alt="">
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Sony</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>                         
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Koss Porta Pro On Ear Headphones with Case</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$120</p>
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                               </div>
-                               <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/AppleIphone.jpg" alt="">
-                                   <div class="sale-product">
-                                       <span>-5%</span>
-                                   </div>
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$78.80</p>
-                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
-                                       
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                               </div>
-                               <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/beatsSolowireless.jpg" alt="">
-                                   <div class="sale-product">
-                                       <span>-5%</span>
-                                   </div>
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$78.80</p>
-                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
-                                       
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                               </div>
-                               <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/JBL flip.jpg" alt="">
-                                   <div class="sale-product">
-                                       <span>-5%</span>
-                                   </div>
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$78.80</p>
-                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
-                                       
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                               </div>
-                        </div>
+                        <label class="add-product">
+                            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                            <a href=""><i class="fa-solid fa-heart"></i></a>   
+                             <a href=""><i class="fa-solid fa-list"></i></a> 
+                             <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                          </label>
                     </div>
-                </div>
-                <div class="product-tab">
-                    <div class="grid wide">
-                        <div class="row products owl-carousel-1 owl-carousel parent">
-                            <div class="parent">       
-                             <div class="product-effect">
-                                <img class="image" src="./Assets/img/AppleIphone.jpg" alt="">      
-                                <div class="flex">
-                                    <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                    <div class="star">
-                                        <i class="fa-solid fa-star star--active"></i>
-                                        <i class="fa-solid fa-star star--active"></i>
-                                        <i class="fa-solid fa-star star--active"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                    </div>
-                                </div>
-                                <div class="product-name">
-                                    <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                </div>
-                                <div style="display: flex;">
-                                    <p class="product-price">$78.80</p>
-                                    <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
-                                    
-                                </div>
-                            </div>
-                                <label class="add-product">
-                                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                    <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                     <a href=""><i class="fa-solid fa-list"></i></a> 
-                                     <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                  </label>
-                            </div>
-                            <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/Lọ.jpg" alt="">
-                                   <div class="sale-product">
-                                       <span>-14%</span>
-                                   </div>
+                    <div class="parent">       
+                        <div class="product-effect">
+                           <img class="image" src="./Assets/img/sofa.jpg" alt="">
+                           <div class="sale-product">
+                               <span>-14%</span>
+                           </div>
+                       
+                     
+                           <div class="flex">
+                               <p style="color: #929292;margin-top: 15px;">Apple</p>
+                               <div class="star">
+                                   <i class="fa-solid fa-star star--active"></i>
+                                   <i class="fa-solid fa-star star--active"></i>
+                                   <i class="fa-solid fa-star star--active"></i>
+                                   <i class="fa-solid fa-star star--active"></i>
+                                   <i class="fa-solid fa-star star--active"></i>
+                                  
+                               </div>
+                           </div>
+                           <div class="product-name">
+                               <a href="" class="product__name-link">Roush Mustang 4-Piston Black Front Brake Kit</a>
+                           </div>
+                           <div style="display: flex;">
+                               <p class="product-price">$85.80</p>
+                               <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$140.00</span>
                                
-                             
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                          
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Roush Mustang 4-Piston Black Front Brake Kit</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$85.80</p>
-                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$140.00</span>
-                                       
-                                   </div>
+                           </div>
+                       </div>
+                 
+                           <label class="add-product">
+                               <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                               <a href=""><i class="fa-solid fa-heart"></i></a>   
+                                <a href=""><i class="fa-solid fa-list"></i></a> 
+                                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                             </label>
+                       </div>
+                       <div class="parent">       
+                        <div class="product-effect">
+                           <img class="image" src="./Assets/img/đồng hồ cát.jpg" alt="">
+                           <div class="flex">
+                               <p style="color: #929292;margin-top: 15px;">Sony</p>
+                               <div class="star">
+                                   <i class="fa-solid fa-star star--active"></i>
+                                   <i class="fa-solid fa-star star--active"></i>
+                                   <i class="fa-solid fa-star-half-stroke"></i>                         
+                                   <i class="fa-solid fa-star-half-stroke"></i>
+                                   <i class="fa-solid fa-star-half-stroke"></i>
                                </div>
-                         
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
+                           </div>
+                           <div class="product-name">
+                               <a href="" class="product__name-link">Koss Porta Pro On Ear Headphones with Case</a>
+                           </div>
+                           <div style="display: flex;">
+                               <p class="product-price">$120</p>
+                           </div>
+                       </div>
+                           <label class="add-product">
+                               <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                               <a href=""><i class="fa-solid fa-heart"></i></a>   
+                                <a href=""><i class="fa-solid fa-list"></i></a> 
+                                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                             </label>
+                       </div>
+                       <div class="parent">       
+                        <div class="product-effect">
+                           <img class="image" src="./Assets/img/bluetoothspeaker.jpg" alt="">
+                           <div class="sale-product">
+                               <span>-5%</span>
+                           </div>
+                           <div class="flex">
+                               <p style="color: #929292;margin-top: 15px;">Apple</p>
+                               <div class="star">
+                                   <i class="fa-solid fa-star star--active"></i>
+                                   <i class="fa-solid fa-star star--active"></i>
+                                   <i class="fa-solid fa-star star--active"></i>
+                                   <i class="fa-solid fa-star-half-stroke"></i>
+                                   <i class="fa-solid fa-star-half-stroke"></i>
                                </div>
-                               <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/oclock-wood.jpg" alt="">
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Sony</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>                         
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Koss Porta Pro On Ear Headphones with Case</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$120</p>
-                                   </div>
+                           </div>
+                           <div class="product-name">
+                               <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
+                           </div>
+                           <div style="display: flex;">
+                               <p class="product-price">$78.80</p>
+                               <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
+                               
+                           </div>
+                       </div>
+                           <label class="add-product">
+                               <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                               <a href=""><i class="fa-solid fa-heart"></i></a>   
+                                <a href=""><i class="fa-solid fa-list"></i></a> 
+                                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                             </label>
+                       </div>
+                       <div class="parent">       
+                        <div class="product-effect">
+                           <img class="image" src="./Assets/img/AppleIphone.jpg" alt="">
+                           <div class="sale-product">
+                               <span>-5%</span>
+                           </div>
+                           <div class="flex">
+                               <p style="color: #929292;margin-top: 15px;">Apple</p>
+                               <div class="star">
+                                   <i class="fa-solid fa-star star--active"></i>
+                                   <i class="fa-solid fa-star star--active"></i>
+                                   <i class="fa-solid fa-star star--active"></i>
+                                   <i class="fa-solid fa-star-half-stroke"></i>
+                                   <i class="fa-solid fa-star-half-stroke"></i>
                                </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
+                           </div>
+                           <div class="product-name">
+                               <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
+                           </div>
+                           <div style="display: flex;">
+                               <p class="product-price">$78.80</p>
+                               <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
+                               
+                           </div>
+                       </div>
+                           <label class="add-product">
+                               <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                               <a href=""><i class="fa-solid fa-heart"></i></a>   
+                                <a href=""><i class="fa-solid fa-list"></i></a> 
+                                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                             </label>
+                       </div>
+                       <div class="parent">       
+                        <div class="product-effect">
+                           <img class="image" src="./Assets/img/beatsSolowireless.jpg" alt="">
+                           <div class="sale-product">
+                               <span>-5%</span>
+                           </div>
+                           <div class="flex">
+                               <p style="color: #929292;margin-top: 15px;">Apple</p>
+                               <div class="star">
+                                   <i class="fa-solid fa-star star--active"></i>
+                                   <i class="fa-solid fa-star star--active"></i>
+                                   <i class="fa-solid fa-star star--active"></i>
+                                   <i class="fa-solid fa-star-half-stroke"></i>
+                                   <i class="fa-solid fa-star-half-stroke"></i>
                                </div>
-                               <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/tabNone.jpg" alt="">
-                                   <div class="sale-product">
-                                       <span>-5%</span>
-                                   </div>
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$78.80</p>
-                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                               </div>
-                               <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/amzonecloud.jpg" alt="">
-                                   <div class="sale-product">
-                                       <span>-5%</span>
-                                   </div>
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$78.80</p>
-                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                               </div>
-                               <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/books.jpg" alt="">
-                                   <div class="sale-product">
-                                       <span>-5%</span>
-                                   </div>
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$78.80</p>
-                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
-                                       
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                               </div>
-                        </div>
+                           </div>
+                           <div class="product-name">
+                               <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
+                           </div>
+                           <div style="display: flex;">
+                               <p class="product-price">$78.80</p>
+                               <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
+                               
+                           </div>
+                       </div>
+                           <label class="add-product">
+                               <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                               <a href=""><i class="fa-solid fa-heart"></i></a>   
+                                <a href=""><i class="fa-solid fa-list"></i></a> 
+                                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                             </label>
+                       </div>
+      
+        </div>
+        <div class="product-tab owl-carousel-1 owl-carousel owl-theme grid wide">    
+            <div class="parent">       
+             <div class="product-effect">
+                <img class="image" src="./Assets/img/SONY XBR.jpg" alt="">      
+                <div class="flex">
+                    <p style="color: #929292;margin-top: 15px;">Apple</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
                     </div>
                 </div>
-                <div class="product-tab">
-                    <div class="grid wide">
-                        <div class="row products owl-carousel-1 owl-carousel parent">
-                            <div class="parent">       
-                             <div class="product-effect">
-                                <img class="image" src="./Assets/img/amzonecloud.jpg" alt="">      
-                                <div class="flex">
-                                    <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                    <div class="star">
-                                        <i class="fa-solid fa-star star--active"></i>
-                                        <i class="fa-solid fa-star star--active"></i>
-                                        <i class="fa-solid fa-star star--active"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                    </div>
-                                </div>
-                                <div class="product-name">
-                                    <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                </div>
-                                <div style="display: flex;">
-                                    <p class="product-price">$78.80</p>
-                                    <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>   
-                                </div>
-                            </div>
-                                <label class="add-product">
-                                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                    <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                     <a href=""><i class="fa-solid fa-list"></i></a> 
-                                     <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                  </label>
-                            </div>
-                            <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/oclock-wood.jpg" alt="">
-                                   <div class="sale-product">
-                                       <span>-14%</span>
-                                   </div>
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i> 
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Roush Mustang 4-Piston Black Front Brake Kit</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$85.80</p>
-                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$140.00</span>     
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                               </div>
-                               <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/Lọ.jpg" alt="">
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Sony</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>                         
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Koss Porta Pro On Ear Headphones with Case</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$120</p>
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                               </div>
-                               <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/oclock-wood.jpg" alt="">
-                                   <div class="sale-product">
-                                       <span>-5%</span>
-                                   </div>
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$78.80</p>
-                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>  
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                               </div>
-                               <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/SONY XBR.jpg" alt="">
-                                   <div class="sale-product">
-                                       <span>-5%</span>
-                                   </div>
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$78.80</p>
-                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
-                                       
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                               </div>
-                               <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/tabNone.jpg" alt="">
-                                   <div class="sale-product">
-                                       <span>-5%</span>
-                                   </div>
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$78.80</p>
-                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
-                                       
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                               </div>
-                        </div>
+                <div class="product-name">
+                    <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
+                </div>
+                <div style="display: flex;">
+                    <p class="product-price">$78.80</p>
+                    <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
+                    
+                </div>
+            </div>
+                <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                    <a href=""><i class="fa-solid fa-heart"></i></a>   
+                     <a href=""><i class="fa-solid fa-list"></i></a> 
+                     <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                  </label>
+            </div>
+            <div class="parent">       
+                <div class="product-effect">
+                   <img class="image" src="./Assets/img/sofa.jpg" alt="">
+                   <div class="sale-product">
+                       <span>-14%</span>
+                   </div>
+               
+             
+                   <div class="flex">
+                       <p style="color: #929292;margin-top: 15px;">Apple</p>
+                       <div class="star">
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                          
+                       </div>
+                   </div>
+                   <div class="product-name">
+                       <a href="" class="product__name-link">Roush Mustang 4-Piston Black Front Brake Kit</a>
+                   </div>
+                   <div style="display: flex;">
+                       <p class="product-price">$85.80</p>
+                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$140.00</span>
+                       
+                   </div>
+               </div>
+         
+                   <label class="add-product">
+                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                       <a href=""><i class="fa-solid fa-heart"></i></a>   
+                        <a href=""><i class="fa-solid fa-list"></i></a> 
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                     </label>
+               </div>
+               <div class="parent">       
+                <div class="product-effect">
+                   <img class="image" src="./Assets/img/đồng hồ cát.jpg" alt="">
+                   <div class="flex">
+                       <p style="color: #929292;margin-top: 15px;">Sony</p>
+                       <div class="star">
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>                         
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                       </div>
+                   </div>
+                   <div class="product-name">
+                       <a href="" class="product__name-link">Koss Porta Pro On Ear Headphones with Case</a>
+                   </div>
+                   <div style="display: flex;">
+                       <p class="product-price">$120</p>
+                   </div>
+               </div>
+                   <label class="add-product">
+                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                       <a href=""><i class="fa-solid fa-heart"></i></a>   
+                        <a href=""><i class="fa-solid fa-list"></i></a> 
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                     </label>
+               </div>
+               <div class="parent">       
+                <div class="product-effect">
+                   <img class="image" src="./Assets/img/bluetoothspeaker.jpg" alt="">
+                   <div class="sale-product">
+                       <span>-5%</span>
+                   </div>
+                   <div class="flex">
+                       <p style="color: #929292;margin-top: 15px;">Apple</p>
+                       <div class="star">
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                       </div>
+                   </div>
+                   <div class="product-name">
+                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
+                   </div>
+                   <div style="display: flex;">
+                       <p class="product-price">$78.80</p>
+                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
+                       
+                   </div>
+               </div>
+                   <label class="add-product">
+                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                       <a href=""><i class="fa-solid fa-heart"></i></a>   
+                        <a href=""><i class="fa-solid fa-list"></i></a> 
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                     </label>
+               </div>
+               <div class="parent">       
+                <div class="product-effect">
+                   <img class="image" src="./Assets/img/AppleIphone.jpg" alt="">
+                   <div class="sale-product">
+                       <span>-5%</span>
+                   </div>
+                   <div class="flex">
+                       <p style="color: #929292;margin-top: 15px;">Apple</p>
+                       <div class="star">
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                       </div>
+                   </div>
+                   <div class="product-name">
+                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
+                   </div>
+                   <div style="display: flex;">
+                       <p class="product-price">$78.80</p>
+                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
+                       
+                   </div>
+               </div>
+                   <label class="add-product">
+                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                       <a href=""><i class="fa-solid fa-heart"></i></a>   
+                        <a href=""><i class="fa-solid fa-list"></i></a> 
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                     </label>
+               </div>
+               <div class="parent">       
+                <div class="product-effect">
+                   <img class="image" src="./Assets/img/beatsSolowireless.jpg" alt="">
+                   <div class="sale-product">
+                       <span>-5%</span>
+                   </div>
+                   <div class="flex">
+                       <p style="color: #929292;margin-top: 15px;">Apple</p>
+                       <div class="star">
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                       </div>
+                   </div>
+                   <div class="product-name">
+                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
+                   </div>
+                   <div style="display: flex;">
+                       <p class="product-price">$78.80</p>
+                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
+                       
+                   </div>
+               </div>
+                   <label class="add-product">
+                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                       <a href=""><i class="fa-solid fa-heart"></i></a>   
+                        <a href=""><i class="fa-solid fa-list"></i></a> 
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                     </label>
+               </div>
+
+        </div>
+        <div class="product-tab owl-carousel-1 owl-carousel owl-theme grid wide">    
+            <div class="parent">       
+             <div class="product-effect">
+                <img class="image" src="./Assets/img/SONY XBR.jpg" alt="">      
+                <div class="flex">
+                    <p style="color: #929292;margin-top: 15px;">Apple</p>
+                    <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
                     </div>
                 </div>
+                <div class="product-name">
+                    <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
+                </div>
+                <div style="display: flex;">
+                    <p class="product-price">$78.80</p>
+                    <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span> 
+                </div>
+            </div>
+                <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                    <a href=""><i class="fa-solid fa-heart"></i></a>   
+                     <a href=""><i class="fa-solid fa-list"></i></a> 
+                     <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                  </label>
+            </div>
+            <div class="parent">       
+                <div class="product-effect">
+                   <img class="image" src="./Assets/img/sofa.jpg" alt="">
+                   <div class="sale-product">
+                       <span>-14%</span>
+                   </div>
+               
+             
+                   <div class="flex">
+                       <p style="color: #929292;margin-top: 15px;">Apple</p>
+                       <div class="star">
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                          
+                       </div>
+                   </div>
+                   <div class="product-name">
+                       <a href="" class="product__name-link">Roush Mustang 4-Piston Black Front Brake Kit</a>
+                   </div>
+                   <div style="display: flex;">
+                       <p class="product-price">$85.80</p>
+                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$140.00</span>
+                       
+                   </div>
+               </div>
+         
+                   <label class="add-product">
+                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                       <a href=""><i class="fa-solid fa-heart"></i></a>   
+                        <a href=""><i class="fa-solid fa-list"></i></a> 
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                     </label>
+               </div>
+               <div class="parent">       
+                <div class="product-effect">
+                   <img class="image" src="./Assets/img/đồng hồ cát.jpg" alt="">
+                   <div class="flex">
+                       <p style="color: #929292;margin-top: 15px;">Sony</p>
+                       <div class="star">
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>                         
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                       </div>
+                   </div>
+                   <div class="product-name">
+                       <a href="" class="product__name-link">Koss Porta Pro On Ear Headphones with Case</a>
+                   </div>
+                   <div style="display: flex;">
+                       <p class="product-price">$120</p>
+                   </div>
+               </div>
+                   <label class="add-product">
+                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                       <a href=""><i class="fa-solid fa-heart"></i></a>   
+                        <a href=""><i class="fa-solid fa-list"></i></a> 
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                     </label>
+               </div>
+               <div class="parent">       
+                <div class="product-effect">
+                   <img class="image" src="./Assets/img/bluetoothspeaker.jpg" alt="">
+                   <div class="sale-product">
+                       <span>-5%</span>
+                   </div>
+                   <div class="flex">
+                       <p style="color: #929292;margin-top: 15px;">Apple</p>
+                       <div class="star">
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                       </div>
+                   </div>
+                   <div class="product-name">
+                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
+                   </div>
+                   <div style="display: flex;">
+                       <p class="product-price">$78.80</p>
+                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
+                       
+                   </div>
+               </div>
+                   <label class="add-product">
+                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                       <a href=""><i class="fa-solid fa-heart"></i></a>   
+                        <a href=""><i class="fa-solid fa-list"></i></a> 
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                     </label>
+               </div>
+               <div class="parent">       
+                <div class="product-effect">
+                   <img class="image" src="./Assets/img/AppleIphone.jpg" alt="">
+                   <div class="sale-product">
+                       <span>-5%</span>
+                   </div>
+                   <div class="flex">
+                       <p style="color: #929292;margin-top: 15px;">Apple</p>
+                       <div class="star">
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                       </div>
+                   </div>
+                   <div class="product-name">
+                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
+                   </div>
+                   <div style="display: flex;">
+                       <p class="product-price">$78.80</p>
+                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
+                       
+                   </div>
+               </div>
+                   <label class="add-product">
+                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                       <a href=""><i class="fa-solid fa-heart"></i></a>   
+                        <a href=""><i class="fa-solid fa-list"></i></a> 
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                     </label>
+               </div>
+               <div class="parent">       
+                <div class="product-effect">
+                   <img class="image" src="./Assets/img/beatsSolowireless.jpg" alt="">
+                   <div class="sale-product">
+                       <span>-5%</span>
+                   </div>
+                   <div class="flex">
+                       <p style="color: #929292;margin-top: 15px;">Apple</p>
+                       <div class="star">
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star star--active"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                           <i class="fa-solid fa-star-half-stroke"></i>
+                       </div>
+                   </div>
+                   <div class="product-name">
+                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
+                   </div>
+                   <div style="display: flex;">
+                       <p class="product-price">$78.80</p>
+                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
+                       
+                   </div>
+               </div>
+                   <label class="add-product">
+                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                       <a href=""><i class="fa-solid fa-heart"></i></a>   
+                        <a href=""><i class="fa-solid fa-list"></i></a> 
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                     </label>
+               </div>
+
+        </div>
+               
+              
               
             </div>
             <div class="container__reveiw">
@@ -1098,191 +1087,194 @@
             </div>
             <div class="lastest-lists">     
                     <div class="product-lastest">
-                        <div class="grid wide">
-                            <div class="row products owl-carousel owl-carousel-1 parent">
-                                <div class="parent">       
-                                 <div class="product-effect">
-                                    <img class="image" src="./Assets/img/amzonecloud.jpg" alt="">      
-                                    <div class="flex">
-                                        <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                        <div class="star">
-                                            <i class="fa-solid fa-star star--active"></i>
-                                            <i class="fa-solid fa-star star--active"></i>
-                                            <i class="fa-solid fa-star star--active"></i>
-                                            <i class="fa-solid fa-star-half-stroke"></i>
-                                            <i class="fa-solid fa-star-half-stroke"></i>
-                                        </div>
-                                    </div>
-                                    <div class="product-name">
-                                        <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                    </div>
-                                    <div style="display: flex;">
-                                        <p class="product-price">$78.80</p>
-                                        <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>   
+                        <div class="product-tab active owl-carousel-1 owl-carousel owl-theme grid wide">    
+                            <div class="parent">       
+                             <div class="product-effect">
+                                <img class="image product-effect" src="./Assets/img/SONY XBR.jpg" alt="">      
+                                <div class="flex">
+                                    <p style="color: #929292;margin-top: 15px;">Apple</p>
+                                    <div class="star">
+                                        <i class="fa-solid fa-star star--active"></i>
+                                        <i class="fa-solid fa-star star--active"></i>
+                                        <i class="fa-solid fa-star star--active"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
                                     </div>
                                 </div>
-                                    <label class="add-product">
-                                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                        <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                         <a href=""><i class="fa-solid fa-list"></i></a> 
-                                         <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                      </label>
+                                <div class="product-name">
+                                    <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
                                 </div>
-                                <div class="parent">       
-                                    <div class="product-effect">
-                                       <img class="image" src="./Assets/img/oclock-wood.jpg" alt="">
-                                       <div class="sale-product">
-                                           <span>-14%</span>
-                                       </div>
-                                       <div class="flex">
-                                           <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                           <div class="star">
-                                               <i class="fa-solid fa-star star--active"></i>
-                                               <i class="fa-solid fa-star star--active"></i>
-                                               <i class="fa-solid fa-star star--active"></i>
-                                               <i class="fa-solid fa-star star--active"></i>
-                                               <i class="fa-solid fa-star star--active"></i> 
-                                           </div>
-                                       </div>
-                                       <div class="product-name">
-                                           <a href="" class="product__name-link">Roush Mustang 4-Piston Black Front Brake Kit</a>
-                                       </div>
-                                       <div style="display: flex;">
-                                           <p class="product-price">$85.80</p>
-                                           <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$140.00</span>     
-                                       </div>
-                                   </div>
-                                       <label class="add-product">
-                                           <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                           <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                            <a href=""><i class="fa-solid fa-list"></i></a> 
-                                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                         </label>
-                                   </div>
-                                   <div class="parent">       
-                                    <div class="product-effect">
-                                       <img class="image" src="./Assets/img/Lọ.jpg" alt="">
-                                       <div class="flex">
-                                           <p style="color: #929292;margin-top: 15px;">Sony</p>
-                                           <div class="star">
-                                               <i class="fa-solid fa-star star--active"></i>
-                                               <i class="fa-solid fa-star star--active"></i>
-                                               <i class="fa-solid fa-star-half-stroke"></i>                         
-                                               <i class="fa-solid fa-star-half-stroke"></i>
-                                               <i class="fa-solid fa-star-half-stroke"></i>
-                                           </div>
-                                       </div>
-                                       <div class="product-name">
-                                           <a href="" class="product__name-link">Koss Porta Pro On Ear Headphones with Case</a>
-                                       </div>
-                                       <div style="display: flex;">
-                                           <p class="product-price">$120</p>
-                                       </div>
-                                   </div>
-                                       <label class="add-product">
-                                           <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                           <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                            <a href=""><i class="fa-solid fa-list"></i></a> 
-                                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                         </label>
-                                   </div>
-                                   <div class="parent">       
-                                    <div class="product-effect">
-                                       <img class="image" src="./Assets/img/oclock-wood.jpg" alt="">
-                                       <div class="sale-product">
-                                           <span>-5%</span>
-                                       </div>
-                                       <div class="flex">
-                                           <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                           <div class="star">
-                                               <i class="fa-solid fa-star star--active"></i>
-                                               <i class="fa-solid fa-star star--active"></i>
-                                               <i class="fa-solid fa-star star--active"></i>
-                                               <i class="fa-solid fa-star-half-stroke"></i>
-                                               <i class="fa-solid fa-star-half-stroke"></i>
-                                           </div>
-                                       </div>
-                                       <div class="product-name">
-                                           <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                       </div>
-                                       <div style="display: flex;">
-                                           <p class="product-price">$78.80</p>
-                                           <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>  
-                                       </div>
-                                   </div>
-                                       <label class="add-product">
-                                           <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                           <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                            <a href=""><i class="fa-solid fa-list"></i></a> 
-                                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                         </label>
-                                   </div>
-                                   <div class="parent">       
-                                    <div class="product-effect">
-                                       <img class="image" src="./Assets/img/SONY XBR.jpg" alt="">
-                                       <div class="sale-product">
-                                           <span>-5%</span>
-                                       </div>
-                                       <div class="flex">
-                                           <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                           <div class="star">
-                                               <i class="fa-solid fa-star star--active"></i>
-                                               <i class="fa-solid fa-star star--active"></i>
-                                               <i class="fa-solid fa-star star--active"></i>
-                                               <i class="fa-solid fa-star-half-stroke"></i>
-                                               <i class="fa-solid fa-star-half-stroke"></i>
-                                           </div>
-                                       </div>
-                                       <div class="product-name">
-                                           <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                       </div>
-                                       <div style="display: flex;">
-                                           <p class="product-price">$78.80</p>
-                                           <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
-                                           
-                                       </div>
-                                   </div>
-                                       <label class="add-product">
-                                           <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                           <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                            <a href=""><i class="fa-solid fa-list"></i></a> 
-                                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                         </label>
-                                   </div>
-                                   <div class="parent">       
-                                    <div class="product-effect">
-                                       <img class="image" src="./Assets/img/tabNone.jpg" alt="">
-                                       <div class="sale-product">
-                                           <span>-5%</span>
-                                       </div>
-                                       <div class="flex">
-                                           <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                           <div class="star">
-                                               <i class="fa-solid fa-star star--active"></i>
-                                               <i class="fa-solid fa-star star--active"></i>
-                                               <i class="fa-solid fa-star star--active"></i>
-                                               <i class="fa-solid fa-star-half-stroke"></i>
-                                               <i class="fa-solid fa-star-half-stroke"></i>
-                                           </div>
-                                       </div>
-                                       <div class="product-name">
-                                           <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                       </div>
-                                       <div style="display: flex;">
-                                           <p class="product-price">$78.80</p>
-                                           <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
-                                           
-                                       </div>
-                                   </div>
-                                       <label class="add-product">
-                                           <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                           <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                            <a href=""><i class="fa-solid fa-list"></i></a> 
-                                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                         </label>
-                                   </div>
+                                <div style="display: flex;">
+                                    <p class="product-price">$78.80</p>
+                                    <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>   
+                                </div>
                             </div>
-                        </div>
+                                <label class="add-product">
+                                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                                    <a href=""><i class="fa-solid fa-heart"></i></a>   
+                                     <a href=""><i class="fa-solid fa-list"></i></a> 
+                                     <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                                  </label>
+                            </div>
+                            <div class="parent">       
+                                <div class="product-effect">
+                                   <img class="image" src="./Assets/img/sofa.jpg" alt="">
+                                   <div class="sale-product">
+                                       <span>-14%</span>
+                                   </div>
+                               
+                             
+                                   <div class="flex">
+                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
+                                       <div class="star">
+                                           <i class="fa-solid fa-star star--active"></i>
+                                           <i class="fa-solid fa-star star--active"></i>
+                                           <i class="fa-solid fa-star star--active"></i>
+                                           <i class="fa-solid fa-star star--active"></i>
+                                           <i class="fa-solid fa-star star--active"></i>
+                                          
+                                       </div>
+                                   </div>
+                                   <div class="product-name">
+                                       <a href="" class="product__name-link">Roush Mustang 4-Piston Black Front Brake Kit</a>
+                                   </div>
+                                   <div style="display: flex;">
+                                       <p class="product-price">$85.80</p>
+                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$140.00</span>
+                                       
+                                   </div>
+                               </div>
+                         
+                                   <label class="add-product">
+                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
+                                        <a href=""><i class="fa-solid fa-list"></i></a> 
+                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                                     </label>
+                            </div>
+                            <div class="parent">       
+                                <div class="product-effect">
+                                   <img class="image" src="./Assets/img/đồng hồ cát.jpg" alt="">
+                                   <div class="flex">
+                                       <p style="color: #929292;margin-top: 15px;">Sony</p>
+                                       <div class="star">
+                                           <i class="fa-solid fa-star star--active"></i>
+                                           <i class="fa-solid fa-star star--active"></i>
+                                           <i class="fa-solid fa-star-half-stroke"></i>                         
+                                           <i class="fa-solid fa-star-half-stroke"></i>
+                                           <i class="fa-solid fa-star-half-stroke"></i>
+                                       </div>
+                                   </div>
+                                   <div class="product-name">
+                                       <a href="" class="product__name-link">Koss Porta Pro On Ear Headphones with Case</a>
+                                   </div>
+                                   <div style="display: flex;">
+                                       <p class="product-price">$120</p>
+                                   </div>
+                               </div>
+                                   <label class="add-product">
+                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
+                                        <a href=""><i class="fa-solid fa-list"></i></a> 
+                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                                     </label>
+                            </div>
+                            <div class="parent">       
+                                <div class="product-effect">
+                                   <img class="image" src="./Assets/img/bluetoothspeaker.jpg" alt="">
+                                   <div class="sale-product">
+                                       <span>-5%</span>
+                                   </div>
+                                   <div class="flex">
+                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
+                                       <div class="star">
+                                           <i class="fa-solid fa-star star--active"></i>
+                                           <i class="fa-solid fa-star star--active"></i>
+                                           <i class="fa-solid fa-star star--active"></i>
+                                           <i class="fa-solid fa-star-half-stroke"></i>
+                                           <i class="fa-solid fa-star-half-stroke"></i>
+                                       </div>
+                                   </div>
+                                   <div class="product-name">
+                                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
+                                   </div>
+                                   <div style="display: flex;">
+                                       <p class="product-price">$78.80</p>
+                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
+                                       
+                                   </div>
+                               </div>
+                                   <label class="add-product">
+                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
+                                        <a href=""><i class="fa-solid fa-list"></i></a> 
+                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                                     </label>
+                            </div>
+                            <div class="parent">       
+                                <div class="product-effect">
+                                   <img class="image" src="./Assets/img/AppleIphone.jpg" alt="">
+                                   <div class="sale-product">
+                                       <span>-5%</span>
+                                   </div>
+                                   <div class="flex">
+                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
+                                       <div class="star">
+                                           <i class="fa-solid fa-star star--active"></i>
+                                           <i class="fa-solid fa-star star--active"></i>
+                                           <i class="fa-solid fa-star star--active"></i>
+                                           <i class="fa-solid fa-star-half-stroke"></i>
+                                           <i class="fa-solid fa-star-half-stroke"></i>
+                                       </div>
+                                   </div>
+                                   <div class="product-name">
+                                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
+                                   </div>
+                                   <div style="display: flex;">
+                                       <p class="product-price">$78.80</p>
+                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
+                                       
+                                   </div>
+                               </div>
+                                   <label class="add-product">
+                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
+                                        <a href=""><i class="fa-solid fa-list"></i></a> 
+                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                                     </label>
+                            </div>
+                            <div class="parent">       
+                                <div class="product-effect">
+                                   <img class="image" src="./Assets/img/beatsSolowireless.jpg" alt="">
+                                   <div class="sale-product">
+                                       <span>-5%</span>
+                                   </div>
+                                   <div class="flex">
+                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
+                                       <div class="star">
+                                           <i class="fa-solid fa-star star--active"></i>
+                                           <i class="fa-solid fa-star star--active"></i>
+                                           <i class="fa-solid fa-star star--active"></i>
+                                           <i class="fa-solid fa-star-half-stroke"></i>
+                                           <i class="fa-solid fa-star-half-stroke"></i>
+                                       </div>
+                                   </div>
+                                   <div class="product-name">
+                                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
+                                   </div>
+                                   <div style="display: flex;">
+                                       <p class="product-price">$78.80</p>
+                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
+                                   </div>
+                               </div>
+                                   <label class="add-product">
+                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
+                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
+                                        <a href=""><i class="fa-solid fa-list"></i></a> 
+                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
+                                     </label>
+                            </div>
+                </div>
                     </div>
             </div>
             <div class="event">

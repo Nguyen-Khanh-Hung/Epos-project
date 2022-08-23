@@ -268,12 +268,17 @@
     padding-bottom: 100px;
     transition: linear 0.8s;
 }
-.product-effect:hover ~label{
-    opacity: 1;
-    transform: translateY(-30%);   
-}
 .product-effect:hover{
     cursor: pointer;
+}
+.owl-nav:hover ~label{
+    opacity: 1;
+    transform: translateY(-30%);
+}
+
+.product-effect:hover ~label{
+    opacity: 1;
+    transform: translateY(-30%);
 }
 .add-product:hover{
     opacity: 1;
@@ -288,7 +293,7 @@
     height: 50px;
     transform: translateY(30%);
     opacity: 0;
-    transition: all 0.7s;
+    transition: all 0.8s;
     line-height: 50px;
     display: flex;
     align-items: center;
@@ -308,7 +313,7 @@
 .product-tab.active{
     display: block;
     animation: modalFadein ease-in-out 0.5s;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .product-name{ 
     margin: 16px 0;   
