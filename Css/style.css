@@ -265,7 +265,6 @@
 }
 /* product-lists */
 #product-lists{
-    padding-bottom: 100px;
     transition: linear 0.8s;
 }
 .product-effect:hover{
@@ -346,12 +345,13 @@
 .container__reveiw{
     background: url(../Assets/img/bg_reveiw.jpg) top center;
     background-size: cover;
-    padding: 100px 0;
+    padding-bottom: 100px;
     max-width: 100%;
     width: 1400px;
     margin: 100px auto;
 }
 .review{
+    padding-top: 100px;
     margin: 0 auto;
     text-align: center;
 }
@@ -406,7 +406,6 @@
 .event__text h3{
     font-size: 2.6rem;
     font-weight: 400;
-    padding: 10px 0;
 }
 .event__text a{
     font-size: 1.2rem;

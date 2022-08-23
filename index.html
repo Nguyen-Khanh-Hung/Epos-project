@@ -42,9 +42,9 @@
 })
   //for slider
 	$('#slider').owlCarousel({
+        animateOut: 'fadeOut',
         loop:false,
         margin:10,
-        nav:true,
         navText:[
         '<div"><i style="font-size:3rem" class="fa-solid fa-angle-left"></i></div>',
         '<div><i style="font-size:3rem" class="fa-solid fa-angle-right"></i></div>',
@@ -64,8 +64,6 @@
     }
 });
 });
-
-
     </script>
 </head>
 <body>
@@ -116,8 +114,7 @@
                                         <li><a href="">4G LTE Tablets</a></li>
                                         <li><a href="">Apple iPad</a></li>
                                         <li><a href="">E-Readers</a></li>
-                                        <li><a href="">iPad & Tablet Accessories</a></li>
-                                       
+                                        <li><a href="">iPad & Tablet Accessories</a></li> 
                                     </ul>
                                 </ul>   
                             </li>
@@ -195,7 +192,7 @@
                 <div class="slider__parent">
                     <img class="slider-image" src="./Assets/img/oclock.jpg" alt="">
                     <div class="slider__text">
-                        <span>AMAZING PRODUCT</span>
+                        <span>WALNUT TIME THE SIGNAL</span>
                         <h1>WALL CLOCK</h1>
                         <p>Clock 3D models he ready to view, buy, and<br>  download for free. 
                             Popular Clock 3D models.<br> View all .· </p>
@@ -208,7 +205,7 @@
                     <img class="slider-image" src="./Assets/img/slider_sofa.jpg" alt="">
                     <div class="slider__text">
                         <span>AMAZING PRODUCT</span>
-                        <h1>WALL CLOCK</h1>
+                        <h1>DECOR CHAIR</h1>
                         <p>Clock 3D models he ready to view, buy, and<br>  download for free. 
                             Popular Clock 3D models.<br> View all .· </p>
                         <button class="slider__button">
@@ -1049,10 +1046,7 @@
                      </label>
                </div>
 
-        </div>
-               
-              
-              
+        </div>     
             </div>
             <div class="container__reveiw">
                     <div class="grid wide">
@@ -1471,7 +1465,7 @@
         </footer>
     </div>
     <!-- Modal header MENU -->
-        <div class="modal-menu">
+    <div class="modal-menu">
             <ul class="menuList">
                 <li><a href="">Homee</a></li>
                 <li><a href="">Shop</a></li>
@@ -1486,10 +1480,10 @@
             <div class="memuClose">
               <a class="a-closeMenu" onclick="closeMenu();"><i class="fa-solid fa-xmark"></i></a>  
             </div>
-        </div>
-        <div class="container__overlay" onclick="hideOverlay();"></div>  
+    </div>
+    <div class="container__overlay" onclick="hideOverlay();"></div>  
         <!-- MODAL LOGIN/REGISTER FORM -->
-        <div class="modal-login js-modal-login">
+    <div class="modal-login js-modal-login">
         <div class="modal-form__account">
             <div class="close-form">
                <button id="close-form" onclick="closeForm();"><i class="fa-solid fa-xmark close-form__icon"></i></button> 
@@ -1546,6 +1540,13 @@
                     </div>
             </div>
         </div>
+    </div>
+    <div id="back-top">
+        <div class="wrapper-back">
+        <i class="fa-solid fa-jet-fighter-up"></i>
+        <div> <p>BACK TO TOP</p> </div>
+        </div>
+       
     </div>
     <script src="./Js/const.js"></script>
     <script src="./Js/model.js"></script>

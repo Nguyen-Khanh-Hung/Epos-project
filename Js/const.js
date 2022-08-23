@@ -14,6 +14,8 @@ const ELEMENT_PRODUCT_TABS      =ELEMENT_PRODUCT_LISTS.querySelectorAll('.produc
 // XỬ LÝ MODAL SETTINGS
 const CONTAINER                 =document.querySelector('.container');
 const ELEMENT_MENU_SETTINGS     =document.getElementById("modal-setting")
+console.log(ELEMENT_MENU_SETTINGS );
+
 const ELEMENT_OPTION_LOG        =document.querySelector('#option-log')
 const ELEMENT_HEADER_FUNCTION   =document.querySelector(".header__function")
 const ELEMENT_BTN_SETTINGS      =ELEMENT_HEADER_FUNCTION .querySelector(".js-btn-setting")
@@ -31,14 +33,15 @@ const ELEMENT_FORM_METHOD       = ELEMENT_FORM_LOGIN.querySelector('.transform-m
 const ELEMENT_TRANSFORM_LOGIN   =ELEMENT_FORM_LOGIN.querySelector(".transform-login")
 const ELEMENT_TRANSFORM_SIGNUP  =ELEMENT_FORM_LOGIN.querySelector(".transform-signup")
 const FORM_LOG                  = document.querySelectorAll(".form-log")
-
+// form login,sigh up
 const ELEMENT_LOGIN             = document.querySelector("#form-login")
 const ELEMENT_SIGNUP            = document.querySelector("#form-signup")
 
 // button login
 const ELEMENT_BUTTON_LOGIN      = ELEMENT_LOGIN.querySelector("#button-login")
 const ELEMENT_BUTTON_SIGNUP     = ELEMENT_LOGIN.querySelector("#button-login")
-
+// Xử lý back top
+const ELEMENT_BACK_TO_TOP=document.querySelector("#back-top")
 
 
 
