@@ -17,74 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function(){
-        $('.owl-carousel-1').owlCarousel({
-        loop:false,
-        margin:10,
-        nav:true,
-        navText:[
-        '<div"><i style="font-size:3rem" class="fa-solid fa-circle-chevron-left"></i></div>',
-        '<div><i style="font-size:3rem"  class="fa-solid fa-circle-chevron-right"></i></div>'
-        ],
-        responsive:{
-        0:{
-            items:1,
-            nav:false
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:4
-        }
-    }
-})
-  //for slider
-	$('#slider').owlCarousel({
-        animateOut: 'fadeOut',
-        loop:false,
-        margin:10,
-        navText:[
-            '<div"><i style="font-size:3rem" class="fa-solid fa-angle-left"></i></div>',
-            '<div><i style="font-size:3rem" class="fa-solid fa-angle-right"></i></div>',
-        ],
-        responsive:{
-        0:{
-            items:1,
-            nav:false
-        },
-        600:{
-            items:1,
-            nav:false
-        },
-        1000:{
-            items:1
-        }
-    }
-});
-$('#customerFeeback').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    navText:[
-        '<div"><i style="font-size:3rem" class="fa-solid fa-angle-left"></i></div>',
-        '<div><i style="font-size:3rem" class="fa-solid fa-angle-right"></i></div>',
-        ],
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:1
-        }
-    }
-})
-});
-    </script>
+    
 </head>
 <body>
     <div class="container">
@@ -1613,5 +1546,6 @@ $('#customerFeeback').owlCarousel({
     <script src="./Js/const.js"></script>
     <script src="./Js/model.js"></script>
     <script src="./Js/veiw.js"></script>
+    <script src="./Js/slider.js"></script>
 </body>
 </html>
