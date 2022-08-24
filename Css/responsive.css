@@ -41,6 +41,9 @@
     .modal-form__account{
         top: 35%!important;
     }
+    #customerFeeback .owl-nav {
+        display: none;
+     }
 }
 /* Mobile */
 @media screen and (max-width: 767px){
@@ -118,4 +121,7 @@
     .close-form__icon {
         font-size: 2rem!important;
     }
+    #customerFeeback .owl-nav {
+        display: none;
+     }
 }
