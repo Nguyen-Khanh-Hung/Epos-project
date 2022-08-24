@@ -29,7 +29,7 @@
         ],
         responsive:{
         0:{
-            items:2,
+            items:1,
             nav:false
         },
         600:{
@@ -46,8 +46,8 @@
         loop:false,
         margin:10,
         navText:[
-        '<div"><i style="font-size:3rem" class="fa-solid fa-angle-left"></i></div>',
-        '<div><i style="font-size:3rem" class="fa-solid fa-angle-right"></i></div>',
+            '<div"><i style="font-size:3rem" class="fa-solid fa-angle-left"></i></div>',
+            '<div><i style="font-size:3rem" class="fa-solid fa-angle-right"></i></div>',
         ],
         responsive:{
         0:{
@@ -63,6 +63,26 @@
         }
     }
 });
+$('#customerFeeback').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    navText:[
+        '<div"><i style="font-size:3rem" class="fa-solid fa-angle-left"></i></div>',
+        '<div><i style="font-size:3rem" class="fa-solid fa-angle-right"></i></div>',
+        ],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:1
+        }
+    }
+})
 });
     </script>
 </head>
@@ -1048,8 +1068,8 @@
 
         </div>     
             </div>
-            <div class="container__reveiw">
-                    <div class="grid wide">
+            <div id="customerFeeback" class="container__reveiw owl-carousel owl-theme">
+                <div class="grid wide">
                         <div class="review">
                         <div class="review__avt">
                             <img class="review__img" src="./Assets/img/avt.png" alt="">
@@ -1063,13 +1083,54 @@
                             <i class="fa-solid fa-quote-right"></i>
                         </div>
                         <div class="review__name">
-                           <p class="review__name">Rebecka Filson</p> 
+                           <p class="review__name">--Rebecka Filson--</p> 
                         </div>
                         
                     </div>
                   
                 </div>
-               
+                <div class="grid wide">
+                    <div class="review">
+                    <div class="review__avt">
+                        <img class="review__img" src="./Assets/customer-feedback/img/avt_customer2.png" alt="">
+                    </div>
+                    <div class="review__content">
+                        <p> Mauris blandit, metus a venenatis lacinia, felis enim tincidunt est, condimentum vulputate 
+                            orci augue eu metus. <br> Fusce dictum, nisi et semper ultricies, felis tortor blandit odio,egestas consequat purus nisi eu est. 
+                            Nam dapibus, diam<br> at blandit molestie, dolor dui vulputate ante, a tincidunt leo turpis quis enim. 
+                            </p>
+                    </div>
+                    <div class="review__quote">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </div>
+                    <div class="review__name">
+                       <p class="review__name">--Nathanael Jaworski--</p> 
+                    </div>
+                    
+                </div>
+              
+                </div>
+                <div class="grid wide">
+                <div class="review">
+                <div class="review__avt">
+                    <img class="review__img" src="./Assets/customer-feedback/img/avt_customer-3.png" alt="">
+                </div>
+                <div class="review__content">
+                    <p> Sed vel urna at dui iaculis gravida. Maecenas pretium, velit vitae placerat faucibus, velit quam 
+                        facilisis elit, <br> sit amet lacinia est est id ligula. Duis feugiat quam non justo faucibus, 
+                        in <br> gravida diam tempor. Nam viverra enim non ipsum ornare, condimentum blandit diam mattis.</p>
+                </div>
+                <div class="review__quote">
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+                <div class="review__name">
+                   <p class="review__name">--Magdalena Valencia--</p> 
+                </div>
+                
+            </div>
+          
+                </div>
+            
             </div>
             <div class="our-product">
                 <div class="grid wide">
@@ -1541,6 +1602,7 @@
             </div>
         </div>
     </div>
+    
     <div id="back-top">
         <div class="wrapper-back">
         <i class="fa-solid fa-jet-fighter-up"></i>

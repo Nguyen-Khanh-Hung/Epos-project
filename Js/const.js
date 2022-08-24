@@ -14,8 +14,6 @@ const ELEMENT_PRODUCT_TABS      =ELEMENT_PRODUCT_LISTS.querySelectorAll('.produc
 // XỬ LÝ MODAL SETTINGS
 const CONTAINER                 =document.querySelector('.container');
 const ELEMENT_MENU_SETTINGS     =document.getElementById("modal-setting")
-console.log(ELEMENT_MENU_SETTINGS );
-
 const ELEMENT_OPTION_LOG        =document.querySelector('#option-log')
 const ELEMENT_HEADER_FUNCTION   =document.querySelector(".header__function")
 const ELEMENT_BTN_SETTINGS      =ELEMENT_HEADER_FUNCTION .querySelector(".js-btn-setting")

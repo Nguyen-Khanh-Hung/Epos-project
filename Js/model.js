@@ -75,7 +75,7 @@ ELEMENT_MODAL_LOGIN.addEventListener("click",function(){
 // Xử lý Back to Top
 
 $(window).scroll(function () { 
-    if($(this).scrollTop()>=300){
+    if($(this).scrollTop()>=400){
         $('#back-top').fadeIn();
     }
     else{
@@ -85,6 +85,7 @@ $(window).scroll(function () {
 
 $('#back-top').click(function (e) { 
     e.preventDefault();
-    $('html, body').animate({scrollTop: 0},1000)
+    $('html, body').animate({scrollTop: 0}
+    ,1000)
 });
 
