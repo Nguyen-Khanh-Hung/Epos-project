@@ -1,13 +1,87 @@
 {
-    "products": [
-      { "id": 1,"img":"./Assets/img/SONY XBR.jpg", "title": "json-server", "author": "typicode" },
-      { "id": 2,"img":"source2", "title": "tui là hưng", "author": "typicode" },
-      { "id": 3,"img":"source4", "title": "json-server", "author": "typicode" },
-      { "id": 4,"img":"source5", "title": "json-server", "author": "typicode" },
-      { "id": 5,"img":"source6", "title": "json-server", "author": "typicode" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
-    ],
-    "profile": { "name": "typicode" }
+  "products": [
+    {
+      "id": 1,
+      "img": "./Assets/img/AppleIphone.jpg",
+      "title": "Sony XBR-55X900E 55-inch 4K HDR Ultra HD",
+      "newPrice":"$79.80",
+      "oldPrice":"$78.80"
+    },
+    {
+      "id": 2,
+      "img": "./Assets/img/đồng hồ cát.jpg",
+      "title": "Roush Mustang 4-Piston Black Front Brake Kit",
+      "newPrice":"$78.80",
+      "oldPrice":"$78.80"
+    },
+    {
+      "id": 3,
+      "img": "./Assets/img/amzonecloud.jpg",
+      "title": "Koss Porta Pro On Ear Headphones with Case",
+      "newPrice":"$78.80",
+      "oldPrice":"$78.80"
+    }
+    ,
+    {
+      "id": 4,
+      "img": "./Assets/img/SONY XBR.jpg ",
+      "title": "Koss Porta Pro On Ear Headphones with Case",
+      "newPrice":"$78.80",
+      "oldPrice":"$78.80"
+    }
+
+  ],
+
+  "products-2": [
+    {
+      "id": 1,
+      "img": "./Assets/img/AppleIphone.jpg",
+      "title": "Sony XBR-55X900E 55-inch 4K HDR Ultra HD",
+      "newPrice":"$79.80",
+      "oldPrice":"$78.80"
+    },
+    {
+      "id": 2,
+      "img": "./Assets/img/đồng hồ cát.jpg",
+      "title": "Roush Mustang 4-Piston Black Front Brake Kit",
+      "newPrice":"$78.80",
+      "oldPrice":"$78.80"
+    },
+    {
+      "id": 3,
+      "img": "./Assets/img/amzonecloud.jpg",
+      "title": "Koss Porta Pro On Ear Headphones with Case",
+      "newPrice":"$78.80",
+      "oldPrice":"$78.80"
+    }
+    ,
+    {
+      "id": 4,
+      "img": "./Assets/img/SONY XBR.jpg ",
+      "title": "Koss Porta Pro On Ear Headphones with Case",
+      "newPrice":"$78.80",
+      "oldPrice":"$78.80"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "img": "./Assets/customer-feedback/img/avt_customer2.png",
+      "conment": "Sed vel urna at dui iaculis gravida. Maecenas pretium, velit vitae placerat faucibus, velit quam facilisis elit, <br> sit amet lacinia est est id ligula. Duis feugiat quam non justo faucibus,"
+    },
+    {
+      "id": 2,
+      "img": "./Assets/customer-feedback/img/avt_customer2.png",
+      "conment": "This is Photoshops version  of Lorem Ipsum. Proin gravida nibh vel velit.Lorem ipsum dolor sit amet,consectetur adipiscing elit.<br> In molestie augue magna. Pellentesque felis lorem, pulvinar sederos non, sagittis consequat urna.<br> Proin id dui tempor, imperdiet nisi et, hendrerit quam. Quisque tempus.."
+    },
+    {
+      "id": 3,
+      "img": "./Assets/customer-feedback/img/avt_customer-3.png",
+      "conment": "Mauris blandit, metus a venenatis lacinia, felis enim tincidunt est, condimentum vulputate orci augue eu metus. <br> Fusce dictum, nisi et semper ultricies, felis tortor blandit odio,egestas consequat purus nisi eu est.  Nam dapibus, diam<br> at blandit molestie, dolor dui vulputate ante, a tincidunt leo turpis quis enim."
+    }
+  ],
+  
+  "profile": {
+    "name": "typicode"
   }
+}

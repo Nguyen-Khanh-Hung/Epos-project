@@ -69,7 +69,7 @@ ELEMENT_MODAL_LOGIN.addEventListener("click",function(){
     ELEMENT_LOGIN.style.display = "block";
     ELEMENT_SIGNUP.style.display = "none";
     ELEMENT_TRANSFORM_SIGNUP.style.color = "var(--text-color)";
-    ELEMENT_MODAL_LOGIN.style.display = "none";
+
 })
 
 // Xử lý Back to Top
