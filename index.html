@@ -1,819 +1,1701 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pet project by Khanh Hung</title>
-    <link rel="stylesheet" href="owlcarousel/./assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="owlcarousel/./assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="owlcarousel/./assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="owlcarousel/./assets/owl.theme.default.min.css"
+    />
     <link rel="icon" href="./Assets/img/favticon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./Css/slider.css">
-    <link rel="stylesheet" href="./Css/modal.css">
-    <link rel="stylesheet" href="./Css/base.css">
-    <link rel="stylesheet" href="./Css/grid.css">
-    <link rel="stylesheet" href="./Css/responsive.css">
-    <link rel="stylesheet" href="./Css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="./Css/slider.css" />
+    <link rel="stylesheet" href="./Css/modal.css" />
+    <link rel="stylesheet" href="./Css/base.css" />
+    <link rel="stylesheet" href="./Css/grid.css" />
+    <link rel="stylesheet" href="./Css/responsive.css" />
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header id="header">
-            <div class="grid wide">
-                <div class="row flex">
-                    <div >
-                        <button id="btn-menu" onclick="showMenu()"  href=""> <i class="fa-solid fa-bars"></i></button>
-                    </div>
-                    <div class="header__logo">
-                        <img class="header__logo-img" src="./Assets/img/logo.png" alt="">
-                    </div>
-                    <div class="header__nav">
-                        <ul class="header__nav-list">
-                            <li class="header__nav-item ">
-                                <a href="" class="header__nav-link header__nav--active">HOME
-                                </a>
-                            </li>
-                            <li class="header__nav-item parent__shop" >
-                                <a href="" class="header__nav-link">SHOP
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </a>
-                                <ul class="child__shop" >
-                                    <ul class="child__shop-list">
-                                        <li class="chill__h3"><h3>Bedroom</h3></li> 
-                                        <li><a href="">Brushes Kits</a></li>
-                                        <li><a href="">Eye Brushes</a></li>
-                                        <li><a href="">Face Brushes</a></li>
-                                        <li><a href="">Lip Brushes</a></li>          
-                                    </ul>
-                                    <ul class="child__shop-list">
-                                        <li class="chill__h3"><h3>Living room</h3></li>                                      
-                                        <li><a href="">Handbag</a></li>
-                                        <li><a href="">Kids' Table</a></li>
-                                        <li><a href="">Clothing</a></li>
-                                        <li><a href="">Shoes</a></li>          
-                                    </ul>
-                                    <ul class="child__shop-list">
-                                        <li class="chill__h3"><h3>Decoration</h3></li> 
-                                        <li><a href="">Face Palettes</a></li>
-                                        <li><a href="">Face Primer</a></li>
-                                        <li><a href="">Lipstick </a></li>
-                                        <li><a href="">Mascara</a></li>   
-                                    </ul>
-                                    <ul class="child__shop-list">
-                                        <li class="chill__h3"><h3>Storage</h3></li> 
-                                        <li><a href="">4G LTE Tablets</a></li>
-                                        <li><a href="">Apple iPad</a></li>
-                                        <li><a href="">E-Readers</a></li>
-                                        <li><a href="">iPad & Tablet Accessories</a></li> 
-                                    </ul>
-                                </ul>   
-                            </li>
-                            <li class="header__nav-item header__nav-accessories" >
-                                <a href="" class="header__nav-link">ACCESSORIES
-                                    <i class="fa-solid fa-angle-down"></i>
-                                </a>
-                                <ul class="child__accessories" >
-                                    <li class="child__accessories-item">
-                                        <a class="child__accessories-link" href="">BRUSHES</a>
-                                    </li>
-                                    <li class="child__accessories-item">
-                                        <a class="child__accessories-link" href="">MASCARA</a>
-                                    </li>
-                                    <li class="child__accessories-item">
-                                        <a class="child__accessories-link" href="">EYE SHADOW</a>
-                                    </li>
-                                    <li class="child__accessories-item">
-                                        <a class="child__accessories-link" href="">EYE BRUSHES</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="" class="header__nav-link">CONTACT US</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="" class="header__nav-link">SPECIALS</a>
-                            </li>
-                            <li class="header__nav-item">
-                                <a href="" class="header__nav-link">BLOG</a>
-                            </li>  
-                        </ul>
-                    </div>
-                    <div class="header__function parent">
-                        <ul class="header__function-icon">
-                            <li class="header__function-item">
-                                <a href="" class="header__function-link ">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </a>
-                            </li>
-                            <li class="header__function-item">
-                                <a href="" class="header__function-link">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </a>
-                            </li>
-                            <li class="header__function-item">
-                              <button class="js-btn-setting" onclick="showSettings()"> <a href="#" class="header__function-link " >
-                                    <i class="js-style fa-solid fa-bars"></i>
-                                </a></button> 
-                            </li>
-                        </ul>
-                        <div id="modal-setting">
-                            <div class="modal-setting__position">
-                                <ul class="account">
-                                    <h4> My account</h4>
-                                    <li id="option-log" onclick="showForm()"><a>Login/Register</a> </li>
-                                </ul>
-                                <ul class="currency">
-                                    <h4>currency</h4>
-                                    <li><a href="">€ Euro</a></li>
-                                    <li><a href="">$ US Dolar</a></li>
-                                </ul>
-                                <ul class="currency">
-                                    <h4>Language</h4>
-                                    <li><a href=""><img src="./Assets/img/flag England.png" alt=""> English</a></li>
-                                    <li><a href=""><img src="./Assets/img/Flag Germany.png" alt=""> Germany</a></li>
-                                </ul>
-                            </div>                      
-                        </div>
-                    </div>
-                </div>
+      <header id="header">
+        <div class="grid wide">
+          <div class="row flex">
+            <div>
+              <button id="btn-menu" onclick="showMenu()" href="">
+                <i class="fa-solid fa-bars"></i>
+              </button>
             </div>
-        </header>
-        <div id="slider" class="owl-carousel owl-theme">    
-            <div class="slider__parent">
-                    <img class="slider-image" src="./Assets/img/oclock.jpg" alt="">
-                    <div class="slider__text">
-                        <span>WALNUT TIME THE SIGNAL</span>
-                        <h1>WALL CLOCK</h1>
-                        <p>Clock 3D models he ready to view, buy, and<br>  download for free. 
-                            Popular Clock 3D models.<br> View all .· </p>
-                        <button class="slider__button">
-                            <a href="">+ SHOPPING NOW</a>
-                        </button>
-                    </div>                  
+            <div class="header__logo">
+              <img
+                class="header__logo-img"
+                src="./Assets/img/logo.png"
+                alt=""
+              />
             </div>
-            <div class="slider__parent">
-                    <img class="slider-image" src="./Assets/img/slider_sofa.jpg" alt="">
-                    <div class="slider__text">
-                        <span>AMAZING PRODUCT</span>
-                        <h1>DECOR CHAIR</h1>
-                        <p>Clock 3D models he ready to view, buy, and<br>  download for free. 
-                            Popular Clock 3D models.<br> View all .· </p>
-                        <button class="slider__button">
-                            <a href="">+ SHOPPING NOW</a>
-                        </button>
-                    </div>
-                   
+            <div class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="" class="header__nav-link header__nav--active"
+                    >HOME
+                  </a>
+                </li>
+                <li class="header__nav-item parent__shop">
+                  <a href="" class="header__nav-link"
+                    >SHOP
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="child__shop">
+                    <ul class="child__shop-list">
+                      <li class="chill__h3"><h3>Bedroom</h3></li>
+                      <li><a href="">Brushes Kits</a></li>
+                      <li><a href="">Eye Brushes</a></li>
+                      <li><a href="">Face Brushes</a></li>
+                      <li><a href="">Lip Brushes</a></li>
+                    </ul>
+                    <ul class="child__shop-list">
+                      <li class="chill__h3"><h3>Living room</h3></li>
+                      <li><a href="">Handbag</a></li>
+                      <li><a href="">Kids' Table</a></li>
+                      <li><a href="">Clothing</a></li>
+                      <li><a href="">Shoes</a></li>
+                    </ul>
+                    <ul class="child__shop-list">
+                      <li class="chill__h3"><h3>Decoration</h3></li>
+                      <li><a href="">Face Palettes</a></li>
+                      <li><a href="">Face Primer</a></li>
+                      <li><a href="">Lipstick </a></li>
+                      <li><a href="">Mascara</a></li>
+                    </ul>
+                    <ul class="child__shop-list">
+                      <li class="chill__h3"><h3>Storage</h3></li>
+                      <li><a href="">4G LTE Tablets</a></li>
+                      <li><a href="">Apple iPad</a></li>
+                      <li><a href="">E-Readers</a></li>
+                      <li><a href="">iPad & Tablet Accessories</a></li>
+                    </ul>
+                  </ul>
+                </li>
+                <li class="header__nav-item header__nav-accessories">
+                  <a href="" class="header__nav-link"
+                    >ACCESSORIES
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="child__accessories">
+                    <li class="child__accessories-item">
+                      <a class="child__accessories-link" href="">BRUSHES</a>
+                    </li>
+                    <li class="child__accessories-item">
+                      <a class="child__accessories-link" href="">MASCARA</a>
+                    </li>
+                    <li class="child__accessories-item">
+                      <a class="child__accessories-link" href="">EYE SHADOW</a>
+                    </li>
+                    <li class="child__accessories-item">
+                      <a class="child__accessories-link" href="">EYE BRUSHES</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__nav-item">
+                  <a href="" class="header__nav-link">CONTACT US</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="" class="header__nav-link">SPECIALS</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="" class="header__nav-link">BLOG</a>
+                </li>
+              </ul>
             </div>
-            <div class="slider__parent">
-                    <img class="slider-image" src="./Assets/img/slider_oclock.jpg" alt="">
-                    <div class="slider__text">
-                        <span>AMAZING PRODUCT</span>
-                        <h1>WALL CLOCK</h1>
-                        <p>Clock 3D models he ready to view, buy, and<br>  download for free. 
-                            Popular Clock 3D models.<br> View all .· </p>
-                        <button class="slider__button">
-                            <a href="">+ SHOPPING NOW</a>
-                        </button>
-                    </div>
-                   
+            <div class="header__function parent">
+              <ul class="header__function-icon">
+                <li class="header__function-item">
+                  <a href="" class="header__function-link">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                </li>
+                <li class="header__function-item">
+                  <a href="" class="header__function-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </a>
+                </li>
+                <li class="header__function-item">
+                  <button class="js-btn-setting" onclick="showSettings()">
+                    <a href="#" class="header__function-link">
+                      <i class="js-style fa-solid fa-bars"></i>
+                    </a>
+                  </button>
+                </li>
+              </ul>
+              <div id="modal-setting">
+                <div class="modal-setting__position">
+                  <ul class="account">
+                    <h4>My account</h4>
+                    <li id="option-log" onclick="showForm()">
+                      <a>Login/Register</a>
+                    </li>
+                  </ul>
+                  <ul class="currency">
+                    <h4>currency</h4>
+                    <li><a href="">€ Euro</a></li>
+                    <li><a href="">$ US Dolar</a></li>
+                  </ul>
+                  <ul class="currency">
+                    <h4>Language</h4>
+                    <li>
+                      <a href=""
+                        ><img src="./Assets/img/flag England.png" alt="" />
+                        English</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><img src="./Assets/img/Flag Germany.png" alt="" />
+                        Germany</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            </div>     
-        <div id="content">
-            <div class="typical-product">
-                <div class="grid wide">
-                    <div class="row flex">
-                        <div class="col p-4 t-6 m-12 parent">
-                          <a href="#"><img class="image" src="./Assets/img/ke sach.jpg" alt=""></a>  
-                            <div class="typical-text">
-                                <p>Storage</p>
-                               <span>Shop now </span> <i class="fa-solid fa-circle-chevron-right"></i>
-                            </div>
-                        </div>
-                        <div class="col p-4 t-6 m-12">
-                            <div class="parent" style="margin-bottom: 25px;">
-                               <a href="#"><img class="image" src="./Assets/img/đèn bàn.jpg" alt=""></a> 
-                                <div class="typical-text">
-                                    <p>Storage</p>
-                                   <span>Shop now </span> <i class="fa-solid fa-circle-chevron-right"></i>
-                                </div>
-                            </div>
-                            <div class="parent">
-                             <a href="#"> <img class="image" src="./Assets/img/ghế tựa.jpg" alt=""></a>  
-                                <div class="typical-text">
-                                    <p>Storage</p>
-                                   <span>Shop now </span> <i class="fa-solid fa-circle-chevron-right"></i>
-                                </div>
-                            </div>
-                           
-                        </div>
-                        <div class="col p-4 t-6 m-12">
-                            <div class="parent">
-                             <a href="#"><img class="image" src="./Assets/img/Lọ.jpg" alt=""></a>   
-                                <div class="typical-text">
-                                    <p>Storage</p>
-                                   <span>Shop now </span> <i class="fa-solid fa-circle-chevron-right"></i>
-                                </div>
-                            </div>
-                          
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="our-product">
-                <div class="grid wide">
-                        <span>Our Products</span>
-                    <p>Mirum est notare quam littera gothica, quam nunc putamus parum 
-                        claram anteposuerit litterarum formas.</p>
-                     <div id="nav-btn">
-                        <button class="btn-tab active"><a href="#">Decoration</a></button>
-                        <button class="btn-tab"><a href="#">Lighting</a></button>
-                        <button class="btn-tab m-top"><a href="#">Storage</a></button>
-                        <button class="btn-tab m-top"><a href="#">Living Room</a></button>
-                    </div>
-                   
-                </div>
-               
-            </div>
-            <div id="product-lists">
-                <div id="product" class="product-tab owl-carousel owl-theme grid wide" > 
-                    
-                </div>
-                <div id="product-2" class="product-tab owl-carousel owl-theme grid wide" > 
-                    
-                </div>
-                <div id="product" class="product-tab owl-carousel owl-theme grid wide" > 
-                    
-                </div>
-                <div id="product" class="product-tab owl-carousel owl-theme grid wide" > 
-                    
-                </div>
-            </div>
-            <div id="customerFeeback" class="container__reveiw owl-carousel owl-theme">
-                <div class="grid wide">
-                        <div class="review">
-                        <div class="review__avt">
-                            <img class="review__img" src="./Assets/img/avt.png" alt="">
-                        </div>
-                        <div class="review__content">
-                            <p> This is Photoshops version  of Lorem Ipsum. Proin gravida nibh vel velit.Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit.<br> In molestie augue magna. Pellentesque felis lorem, pulvinar sed 
-                                eros non, sagittis consequat urna.<br> Proin id dui tempor, imperdiet nisi et, hendrerit quam. Quisque tempus..</p>
-                        </div>
-                        <div class="review__quote">
-                            <i class="fa-solid fa-quote-right"></i>
-                        </div>
-                        <div class="review__name">
-                           <p class="review__name">--Rebecka Filson--</p> 
-                        </div>
-                        
-                    </div>
-                  
-                </div>
-                <div class="grid wide">
-                    <div class="review">
-                    <div class="review__avt">
-                        <img class="review__img" src="./Assets/customer-feedback/img/avt_customer2.png" alt="">
-                    </div>
-                    <div class="review__content">
-                        <p> Mauris blandit, metus a venenatis lacinia, felis enim tincidunt est, condimentum vulputate 
-                            orci augue eu metus. <br> Fusce dictum, nisi et semper ultricies, felis tortor blandit odio,egestas consequat purus nisi eu est. 
-                            Nam dapibus, diam<br> at blandit molestie, dolor dui vulputate ante, a tincidunt leo turpis quis enim. 
-                            </p>
-                    </div>
-                    <div class="review__quote">
-                        <i class="fa-solid fa-quote-right"></i>
-                    </div>
-                    <div class="review__name">
-                       <p class="review__name">--Nathanael Jaworski--</p> 
-                    </div>
-                </div>
-                </div>
-                <div class="grid wide">
-                <div class="review">
-                <div class="review__avt">
-                    <img class="review__img" src="./Assets/customer-feedback/img/avt_customer-3.png" alt="">
-                </div>
-                <div class="review__content">
-                    <p> Sed vel urna at dui iaculis gravida. Maecenas pretium, velit vitae placerat faucibus, velit quam 
-                        facilisis elit, <br> sit amet lacinia est est id ligula. Duis feugiat quam non justo faucibus, 
-                        in <br> gravida diam tempor. Nam viverra enim non ipsum ornare, condimentum blandit diam mattis.</p>
-                </div>
-                <div class="review__quote">
-                    <i class="fa-solid fa-quote-right"></i>
-                </div>
-                <div class="review__name">
-                   <p class="review__name">--Magdalena Valencia--</p> 
-                </div>
-            </div>
-                </div>
-            </div>
-            <div class="our-product">
-                <div class="grid wide">
-                        <span>Latest Arrivals</span>
-                    <p>Mirum est notare quam littera gothica, quam nunc putamus parum 
-                        claram anteposuerit litterarum formas.</p>
-                </div>
-               
-            </div>
-            <div class="lastest-lists">     
-                    <div class="product-lastest">
-                        <div class="product-tab active owl-carousel-1 owl-carousel owl-theme grid wide">    
-                            <div class="parent">       
-                             <div class="product-effect">
-                                <img class="image product-effect" src="./Assets/img/oclock-wood.jpg" alt="">      
-                                <div class="flex">
-                                    <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                    <div class="star">
-                                        <i class="fa-solid fa-star star--active"></i>
-                                        <i class="fa-solid fa-star star--active"></i>
-                                        <i class="fa-solid fa-star star--active"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                    </div>
-                                </div>
-                                <div class="product-name">
-                                    <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                </div>
-                                <div style="display: flex;">
-                                    <p class="product-price">$78.80</p>
-                                    <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>   
-                                </div>
-                            </div>
-                                <label class="add-product">
-                                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                    <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                     <a href=""><i class="fa-solid fa-list"></i></a> 
-                                     <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                  </label>
-                            </div>
-                            <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/amzonecloud.jpg" alt="">
-                                   <div class="sale-product">
-                                       <span>-14%</span>
-                                   </div>
-                               
-                             
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                          
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Roush Mustang 4-Piston Black Front Brake Kit</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$85.80</p>
-                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$140.00</span>
-                                       
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                            </div>
-                            <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/JBL flip.jpg" alt="">
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Sony</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>                         
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Koss Porta Pro On Ear Headphones with Case</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$120</p>
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                            </div>
-                            <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/bluetoothspeaker.jpg" alt="">
-                                   <div class="sale-product">
-                                       <span>-5%</span>
-                                   </div>
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$78.80</p>
-                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span> 
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                            </div>
-                            <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/AppleIphone.jpg" alt="">
-                                   <div class="sale-product">
-                                       <span>-5%</span>
-                                   </div>
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$78.80</p>
-                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
-                                       
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                            </div>
-                            <div class="parent">       
-                                <div class="product-effect">
-                                   <img class="image" src="./Assets/img/beatsSolowireless.jpg" alt="">
-                                   <div class="sale-product">
-                                       <span>-5%</span>
-                                   </div>
-                                   <div class="flex">
-                                       <p style="color: #929292;margin-top: 15px;">Apple</p>
-                                       <div class="star">
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star star--active"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                           <i class="fa-solid fa-star-half-stroke"></i>
-                                       </div>
-                                   </div>
-                                   <div class="product-name">
-                                       <a href="" class="product__name-link">Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a>
-                                   </div>
-                                   <div style="display: flex;">
-                                       <p class="product-price">$78.80</p>
-                                       <span class="old-price" style="margin-left: 10px;text-decoration:line-through">$80.00</span>
-                                   </div>
-                               </div>
-                                   <label class="add-product">
-                                       <a href=""><i class="fa-solid fa-cart-shopping"></i></a>  
-                                       <a href=""><i class="fa-solid fa-heart"></i></a>   
-                                        <a href=""><i class="fa-solid fa-list"></i></a> 
-                                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>  
-                                     </label>
-                            </div>
-                </div>
-                    </div>
-            </div>
-            <div class="event">
-                <div class="grid wide">
-                    <div class="row">
-                        <div class="col p-6 t-12 m-12">
-                            <div class="black-friday">
-                                <img class="image" src="./Assets/img/Blackfriday.jpg" alt="">
-                                <div class="event__text">
-                                    <h4 >Black Friday</h4>
-                                    <h3 >Save Up To <br> 50% Off</h3>
-                                    <a href="">Shop now</a>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col p-6 t-12 m-12">
-                            <div class="black-friday m-top">
-                                <img class="image" src="./Assets/img/best-Selling.jpg" alt="">
-                                <div class="event__text ">
-                                    <h4 >Best Selling !</h4>
-                                    <h3 >Living Room Up <br> To 70% Off</h3>
-                                    <a href="">Shop now</a>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="policy-block">
-                <div class="grid wide">
-                    <div class="row">
-                        <div class="col p-4 policy__box">
-                            <div class="img">
-                                <img src="./Assets/img/ship.png" alt="">
-                            </div>
-                            <div class="policy__box-title">
-                                <a href="">FREE SHIPPING WORLDWIDE</a>
-                            </div>
-                            <div>
-                                <p>We offer free shipping via Standard Shipping on orders over $200.00</p>
-                            </div>
-                           
-                        </div>
-                        <div class="col p-4 policy__box">
-                            <div class="img">
-                                <img src="./Assets/img/money_back.png" alt="">
-                            </div>
-                            <div class="policy__box-title">
-                                <a href="">Money Back Guarantee</a>
-                            </div>
-                            <div>
-                                <p>If you're not satisfied with our product, 
-                                    we'll refund the purchase price*.</p>
-                            </div>
-                           
-                        </div>
-                        <div class="col p-4 policy__box">
-                            <div class="img">
-                                <img src="./Assets/img/support247.png" alt="">
-                            </div>
-                            <div class="policy__box-title">
-                                <a href="">online support 24/7 </a>
-                            </div>
-                            <div>
-                                <p>Our friendly support team is available to help you 24 hours a day, seven days a week</p>
-                            </div>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="our-product">
-                <div class="grid wide">
-                        <span>Latest Blog Posts</span>
-                    <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram anteposuerit litterarum formas.
-                    </p>
-                </div>
-            </div>
-            <div class="daily-blog">
-                <div class="grid wide">
-                    <div class="blog-list">
-                    <div class="row">       
-                        <div class="col p-4 t-6 m-12">
-                            <div class="blog">
-                                <div class="blog-img">
-                                    <img class="image" src="./Assets/img/kitchen-blog.jpg" alt="" >
-                                    <div class="calendar">
-                                        <p>Sep </p>
-                                        <span> 06</span>
-                                    </div>
-                                </div>
-                                <div class="blog-title">
-                                    <a href="">Buy Used Engines and Used Transmissions</a>
-                                </div>
-                                <div >
-                                    <p class="blog-by"> <span style="color: var(--content-color);">By</span>  Plaza Themes</p>
-                                </div>
-                                <div class="blog-content">
-                                    <p>It's no secret, engines and transmissions can be very expensive...</p>
-                                </div>
-                                <div class="blog-more">
-                                    <a  href="">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col p-4 t-6 m-12">
-                            <div class="blog">
-                                <div class="blog-img">
-                                    <img class="image" src="./Assets/img/livingroom-blog.jpg" alt="" >
-                                    <div class="calendar">
-                                        <p>Oct</p>
-                                        <span> 30</span>
-                                    </div>
-                                </div>
-                                <div class="blog-title">
-                                    <a href="">Get Your Car or Truck Ready for the Summer Heat!</a>
-                                </div>
-                                <div>
-                                    <p  class="blog-by"> <span style="color: var(--content-color);">By</span>  Plaza Themes</p>
-                                </div>
-                                <div class="blog-content">
-                                    <p>Summer is beautiful in Colorado but we can get 
-                                        some very, very, hot daytime temps...</p>
-                                </div>
-                                <div class="blog-more">
-                                    <a class="blog-read" href="">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col p-4 t-6 m-12">
-                            <div class="blog">
-                                <div class="blog-img">
-                                    <img class="image" src="./Assets/img/device-blog.jpg" alt="" >
-                                    <div class="calendar">
-                                        <p>Nov </p>
-                                        <span> 08</span>
-                                    </div>
-                                </div>
-                                <div class="blog-title">
-                                    <a href="">Minor Wreck? We Got The Auto Parts!</a>
-                                </div>
-                                <div>
-                                    <p  class="blog-by"> <span style="color: var(--content-color);">By</span>  Plaza Themes</p>
-                                </div>
-                                <div class="blog-content">
-                                    <p>It’s winter in Colorado and we’ve had a number of snowy days and hairy commutes...</p>
-                                </div>
-                                <div class="blog-more">
-                                    <a class="blog-read"  href="">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-            <div class="our-product" >
-                <div class="grid wide">
-                    <p>Special Ofers For Subscribers</p>
-                    <span>Ten Percent Member Discount</span>
-                    <p>Subscribe to our newsletters now and stay up to date with new collections, the latest lookbooks and exclusive offers.
-                    </p>
-                    <div class="subscribe">
-                        <div class="subscribe__form">
-                            <input class="subscribe__input" type="text" placeholder="Enter you email address here...">
-                        <a class="subscribe__btn" href="">Subscribe</a>
-                        </div>
-                        
-                    </div>
-                </div>
-               
-            </div>
-            <hr>
+      </header>
+      <div id="slider" class="owl-carousel owl-theme">
+        <div class="slider__parent">
+          <img class="slider-image" src="./Assets/img/oclock.jpg" alt="" />
+          <div class="slider__text">
+            <span>WALNUT TIME THE SIGNAL</span>
+            <h1>WALL CLOCK</h1>
+            <p>
+              Clock 3D models he ready to view, buy, and<br />
+              download for free. Popular Clock 3D models.<br />
+              View all .·
+            </p>
+            <button class="slider__button">
+              <a href="">+ SHOPPING NOW</a>
+            </button>
+          </div>
         </div>
-        <footer id="footer">
-            <div class="grid wide">
-                <div class="row" style="display: flex;justify-content:center;">
-                    <div class="footer__img">
-                        <img src="./Assets/img/logo.png" alt="">
-                    </div>
-                    <div class="footer__right">
-                        <p>Copyright © 2019 PlazaThemes. All Right Reserved.</p>
-                    </div>
-                        <ul class="footer__socials">
-                            <li><a href=""><i class="fa-brands footer__socials-icon fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fa-brands footer__socials-icon fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa-brands footer__socials-icon fa-google"></i></a></li>
-                            <li><a href=""><i class="fa-brands footer__socials-icon fa-youtube"></i></a></li>
-                            </ul>
+        <div class="slider__parent">
+          <img class="slider-image" src="./Assets/img/slider_sofa.jpg" alt="" />
+          <div class="slider__text">
+            <span>AMAZING PRODUCT</span>
+            <h1>DECOR CHAIR</h1>
+            <p>
+              Clock 3D models he ready to view, buy, and<br />
+              download for free. Popular Clock 3D models.<br />
+              View all .·
+            </p>
+            <button class="slider__button">
+              <a href="">+ SHOPPING NOW</a>
+            </button>
+          </div>
+        </div>
+        <div class="slider__parent">
+          <img
+            class="slider-image"
+            src="./Assets/img/slider_oclock.jpg"
+            alt=""
+          />
+          <div class="slider__text">
+            <span>AMAZING PRODUCT</span>
+            <h1>WALL CLOCK</h1>
+            <p>
+              Clock 3D models he ready to view, buy, and<br />
+              download for free. Popular Clock 3D models.<br />
+              View all .·
+            </p>
+            <button class="slider__button">
+              <a href="">+ SHOPPING NOW</a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="typical-product">
+          <div class="grid wide">
+            <div class="row flex">
+              <div class="col p-4 t-6 m-12 parent">
+                <a href="#"
+                  ><img class="image" src="./Assets/img/ke sach.jpg" alt=""
+                /></a>
+                <div class="typical-text">
+                  <p>Storage</p>
+                  <span>Shop now </span>
+                  <i class="fa-solid fa-circle-chevron-right"></i>
                 </div>
+              </div>
+              <div class="col p-4 t-6 m-12">
+                <div class="parent" style="margin-bottom: 25px">
+                  <a href="#"
+                    ><img class="image" src="./Assets/img/đèn bàn.jpg" alt=""
+                  /></a>
+                  <div class="typical-text">
+                    <p>Storage</p>
+                    <span>Shop now </span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                  </div>
+                </div>
+                <div class="parent">
+                  <a href="#">
+                    <img class="image" src="./Assets/img/ghế tựa.jpg" alt=""
+                  /></a>
+                  <div class="typical-text">
+                    <p>Storage</p>
+                    <span>Shop now </span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col p-4 t-6 m-12">
+                <div class="parent">
+                  <a href="#"
+                    ><img class="image" src="./Assets/img/Lọ.jpg" alt=""
+                  /></a>
+                  <div class="typical-text">
+                    <p>Storage</p>
+                    <span>Shop now </span>
+                    <i class="fa-solid fa-circle-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-        </footer>
+          </div>
+        </div>
+        <div class="our-product">
+          <div class="grid wide">
+            <span>Our Products</span>
+            <p>
+              Mirum est notare quam littera gothica, quam nunc putamus parum
+              claram anteposuerit litterarum formas.
+            </p>
+            <div id="nav-btn">
+              <button class="btn-tab active"><a href="#">Decoration</a></button>
+              <button class="btn-tab"><a href="#">Lighting</a></button>
+              <button class="btn-tab m-top"><a href="#">Storage</a></button>
+              <button class="btn-tab m-top"><a href="#">Living Room</a></button>
+            </div>
+          </div>
+        </div>
+        <div id="product-lists">
+          <div class="product-tab active">
+            <div class="grid wide">
+              <div class="row products">
+                <div class="col p-3 t-6 parent">
+                  <div class="product-effect">
+                    <img class="image" src="./Assets/img/SONY XBR.jpg" alt="" />
+                    <div class="flex">
+                      <p style="color: #929292; margin-top: 15px">Apple</p>
+                      <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                    </div>
+                    <div class="product-name">
+                      <a href="" class="product__name-link"
+                        >Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a
+                      >
+                    </div>
+                    <div style="display: flex">
+                      <p class="product-price">$78.80</p>
+                      <span
+                        class="old-price"
+                        style="margin-left: 10px; text-decoration: line-through"
+                        >$80.00</span
+                      >
+                    </div>
+                  </div>
+                  <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </label>
+                </div>
+                <div class="col p-3 t-6 parent">
+                  <div class="product-effect">
+                    <img class="image" src="./Assets/img/sofa.jpg" alt="" />
+                    <div class="sale-product">
+                      <span>-14%</span>
+                    </div>
+
+                    <div class="flex">
+                      <p style="color: #929292; margin-top: 15px">Apple</p>
+                      <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                      </div>
+                    </div>
+                    <div class="product-name">
+                      <a href="" class="product__name-link"
+                        >Roush Mustang 4-Piston Black Front Brake Kit</a
+                      >
+                    </div>
+                    <div style="display: flex">
+                      <p class="product-price">$85.80</p>
+                      <span
+                        class="old-price"
+                        style="margin-left: 10px; text-decoration: line-through"
+                        >$140.00</span
+                      >
+                    </div>
+                  </div>
+
+                  <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </label>
+                </div>
+                <div class="col p-3 t-6 parent">
+                  <div class="product-effect">
+                    <img
+                      class="image"
+                      src="./Assets/img/đồng hồ cát.jpg"
+                      alt=""
+                    />
+                    <div class="flex">
+                      <p style="color: #929292; margin-top: 15px">Sony</p>
+                      <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                    </div>
+                    <div class="product-name">
+                      <a href="" class="product__name-link"
+                        >Koss Porta Pro On Ear Headphones with Case</a
+                      >
+                    </div>
+                    <div style="display: flex">
+                      <p class="product-price">$120</p>
+                    </div>
+                  </div>
+                  <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </label>
+                </div>
+                <div class="col p-3 t-6 parent">
+                  <div class="product-effect">
+                    <img
+                      class="image"
+                      src="./Assets/img/bluetoothspeaker.jpg"
+                      alt=""
+                    />
+                    <div class="sale-product">
+                      <span>-5%</span>
+                    </div>
+                    <div class="flex">
+                      <p style="color: #929292; margin-top: 15px">Apple</p>
+                      <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                    </div>
+                    <div class="product-name">
+                      <a href="" class="product__name-link"
+                        >Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a
+                      >
+                    </div>
+                    <div style="display: flex">
+                      <p class="product-price">$78.80</p>
+                      <span
+                        class="old-price"
+                        style="margin-left: 10px; text-decoration: line-through"
+                        >$80.00</span
+                      >
+                    </div>
+                  </div>
+                  <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-tab">
+            <div class="grid wide">
+              <div class="row products">
+                <div class="col p-3 t-6 parent">
+                  <div class="product-effect">
+                    <img class="image" src="./Assets/img/JBL flip.jpg" alt="" />
+                    <div class="flex">
+                      <p style="color: #929292; margin-top: 15px">Apple</p>
+                      <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                    </div>
+                    <div class="product-name">
+                      <a href="" class="product__name-link"
+                        >Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a
+                      >
+                    </div>
+                    <div style="display: flex">
+                      <p class="product-price">$78.80</p>
+                      <span
+                        class="old-price"
+                        style="margin-left: 10px; text-decoration: line-through"
+                        >$80.00</span
+                      >
+                    </div>
+                  </div>
+                  <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </label>
+                </div>
+                <div class="col p-3 t-6 parent">
+                  <div class="product-effect">
+                    <img
+                      class="image"
+                      src="./Assets/img/bluetoothspeaker.jpg"
+                      alt=""
+                    />
+                    <div class="sale-product">
+                      <span>-14%</span>
+                    </div>
+
+                    <div class="flex">
+                      <p style="color: #929292; margin-top: 15px">Apple</p>
+                      <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                      </div>
+                    </div>
+                    <div class="product-name">
+                      <a href="" class="product__name-link"
+                        >Roush Mustang 4-Piston Black Front Brake Kit</a
+                      >
+                    </div>
+                    <div style="display: flex">
+                      <p class="product-price">$85.80</p>
+                      <span
+                        class="old-price"
+                        style="margin-left: 10px; text-decoration: line-through"
+                        >$140.00</span
+                      >
+                    </div>
+                  </div>
+
+                  <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </label>
+                </div>
+                <div class="col p-3 t-6 parent">
+                  <div class="product-effect">
+                    <img
+                      class="image"
+                      src="./Assets/img/oclock-wood.jpg"
+                      alt=""
+                    />
+                    <div class="flex">
+                      <p style="color: #929292; margin-top: 15px">Sony</p>
+                      <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                    </div>
+                    <div class="product-name">
+                      <a href="" class="product__name-link"
+                        >Koss Porta Pro On Ear Headphones with Case</a
+                      >
+                    </div>
+                    <div style="display: flex">
+                      <p class="product-price">$120</p>
+                    </div>
+                  </div>
+                  <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </label>
+                </div>
+                <div class="col p-3 t-6 parent">
+                  <div class="product-effect">
+                    <img
+                      class="image"
+                      src="./Assets/img/head-phone.jpg"
+                      alt=""
+                    />
+                    <div class="sale-product">
+                      <span>-5%</span>
+                    </div>
+                    <div class="flex">
+                      <p style="color: #929292; margin-top: 15px">Apple</p>
+                      <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                    </div>
+                    <div class="product-name">
+                      <a href="" class="product__name-link"
+                        >Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a
+                      >
+                    </div>
+                    <div style="display: flex">
+                      <p class="product-price">$78.80</p>
+                      <span
+                        class="old-price"
+                        style="margin-left: 10px; text-decoration: line-through"
+                        >$80.00</span
+                      >
+                    </div>
+                  </div>
+                  <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-tab">
+            <div class="grid wide">
+              <div class="row products">
+                <div class="col p-3 t-6 parent">
+                  <div class="product-effect">
+                    <img
+                      class="image"
+                      src="./Assets/img/đồng hồ cát.jpg"
+                      alt=""
+                    />
+                    <div class="flex">
+                      <p style="color: #929292; margin-top: 15px">Apple</p>
+                      <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                    </div>
+                    <div class="product-name">
+                      <a href="" class="product__name-link"
+                        >Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a
+                      >
+                    </div>
+                    <div style="display: flex">
+                      <p class="product-price">$78.80</p>
+                      <span
+                        class="old-price"
+                        style="margin-left: 10px; text-decoration: line-through"
+                        >$80.00</span
+                      >
+                    </div>
+                  </div>
+                  <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </label>
+                </div>
+                <div class="col p-3 t-6 parent">
+                  <div class="product-effect">
+                    <img class="image" src="./Assets/img/sofa.jpg" alt="" />
+                    <div class="sale-product">
+                      <span>-14%</span>
+                    </div>
+
+                    <div class="flex">
+                      <p style="color: #929292; margin-top: 15px">Apple</p>
+                      <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                      </div>
+                    </div>
+                    <div class="product-name">
+                      <a href="" class="product__name-link"
+                        >Roush Mustang 4-Piston Black Front Brake Kit</a
+                      >
+                    </div>
+                    <div style="display: flex">
+                      <p class="product-price">$85.80</p>
+                      <span
+                        class="old-price"
+                        style="margin-left: 10px; text-decoration: line-through"
+                        >$140.00</span
+                      >
+                    </div>
+                  </div>
+                  <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </label>
+                </div>
+                <div class="col p-3 t-6 parent">
+                  <div class="product-effect">
+                    <img class="image" src="./Assets/img/books.jpg" alt="" />
+                    <div class="flex">
+                      <p style="color: #929292; margin-top: 15px">Sony</p>
+                      <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                    </div>
+                    <div class="product-name">
+                      <a href="" class="product__name-link"
+                        >Koss Porta Pro On Ear Headphones with Case</a
+                      >
+                    </div>
+                    <div style="display: flex">
+                      <p class="product-price">$120</p>
+                    </div>
+                  </div>
+                  <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </label>
+                </div>
+                <div class="col p-3 t-6 parent">
+                  <div class="product-effect">
+                    <img
+                      class="image"
+                      src="./Assets/img/bluetoothspeaker.jpg"
+                      alt=""
+                    />
+                    <div class="sale-product">
+                      <span>-5%</span>
+                    </div>
+                    <div class="flex">
+                      <p style="color: #929292; margin-top: 15px">Apple</p>
+                      <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                    </div>
+                    <div class="product-name">
+                      <a href="" class="product__name-link"
+                        >Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a
+                      >
+                    </div>
+                    <div style="display: flex">
+                      <p class="product-price">$78.80</p>
+                      <span
+                        class="old-price"
+                        style="margin-left: 10px; text-decoration: line-through"
+                        >$80.00</span
+                      >
+                    </div>
+                  </div>
+                  <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-tab">
+            <div class="grid wide">
+              <div class="row products">
+                <div class="col p-3 t-6 parent">
+                  <div class="product-effect">
+                    <img
+                      class="image"
+                      src="./Assets/img/bluetoothspeaker.jpg"
+                      alt=""
+                    />
+                    <div class="flex">
+                      <p style="color: #929292; margin-top: 15px">Apple</p>
+                      <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                    </div>
+                    <div class="product-name">
+                      <a href="" class="product__name-link"
+                        >Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a
+                      >
+                    </div>
+                    <div style="display: flex">
+                      <p class="product-price">$78.80</p>
+                      <span
+                        class="old-price"
+                        style="margin-left: 10px; text-decoration: line-through"
+                        >$80.00</span
+                      >
+                    </div>
+                  </div>
+                  <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </label>
+                </div>
+                <div class="col p-3 t-6 parent">
+                  <div class="product-effect">
+                    <img
+                      class="image"
+                      src="./Assets/img/oclock-wood.jpg"
+                      alt=""
+                    />
+                    <div class="sale-product">
+                      <span>-14%</span>
+                    </div>
+
+                    <div class="flex">
+                      <p style="color: #929292; margin-top: 15px">Apple</p>
+                      <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                      </div>
+                    </div>
+                    <div class="product-name">
+                      <a href="" class="product__name-link"
+                        >Roush Mustang 4-Piston Black Front Brake Kit</a
+                      >
+                    </div>
+                    <div style="display: flex">
+                      <p class="product-price">$85.80</p>
+                      <span
+                        class="old-price"
+                        style="margin-left: 10px; text-decoration: line-through"
+                        >$140.00</span
+                      >
+                    </div>
+                  </div>
+
+                  <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </label>
+                </div>
+                <div class="col p-3 t-6 parent">
+                  <div class="product-effect">
+                    <img
+                      class="image"
+                      src="./Assets/img/đồng hồ cát.jpg"
+                      alt=""
+                    />
+                    <div class="flex">
+                      <p style="color: #929292; margin-top: 15px">Sony</p>
+                      <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                    </div>
+                    <div class="product-name">
+                      <a href="" class="product__name-link"
+                        >Koss Porta Pro On Ear Headphones with Case</a
+                      >
+                    </div>
+                    <div style="display: flex">
+                      <p class="product-price">$120</p>
+                    </div>
+                  </div>
+                  <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </label>
+                </div>
+                <div class="col p-3 t-6 parent">
+                  <div class="product-effect">
+                    <img class="image" src="./Assets/img/books.jpg" alt="" />
+                    <div class="sale-product">
+                      <span>-5%</span>
+                    </div>
+                    <div class="flex">
+                      <p style="color: #929292; margin-top: 15px">Apple</p>
+                      <div class="star">
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star star--active"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                      </div>
+                    </div>
+                    <div class="product-name">
+                      <a href="" class="product__name-link"
+                        >Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a
+                      >
+                    </div>
+                    <div style="display: flex">
+                      <p class="product-price">$78.80</p>
+                      <span
+                        class="old-price"
+                        style="margin-left: 10px; text-decoration: line-through"
+                        >$80.00</span
+                      >
+                    </div>
+                  </div>
+                  <label class="add-product">
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a href=""><i class="fa-solid fa-heart"></i></a>
+                    <a href=""><i class="fa-solid fa-list"></i></a>
+                    <a href=""
+                      ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                    ></a>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="customerFeeback"
+          class="container__reveiw owl-carousel owl-theme"
+        >
+          <div class="grid wide">
+            <div class="review">
+              <div class="review__avt">
+                <img class="review__img" src="./Assets/img/avt.png" alt="" />
+              </div>
+              <div class="review__content">
+                <p>
+                  This is Photoshops version of Lorem Ipsum. Proin gravida nibh
+                  vel velit.Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit.<br />
+                  In molestie augue magna. Pellentesque felis lorem, pulvinar
+                  sed eros non, sagittis consequat urna.<br />
+                  Proin id dui tempor, imperdiet nisi et, hendrerit quam.
+                  Quisque tempus..
+                </p>
+              </div>
+              <div class="review__quote">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <div class="review__name">
+                <p class="review__name">--Rebecka Filson--</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid wide">
+            <div class="review">
+              <div class="review__avt">
+                <img
+                  class="review__img"
+                  src="./Assets/customer-feedback/img/avt_customer2.png"
+                  alt=""
+                />
+              </div>
+              <div class="review__content">
+                <p>
+                  Mauris blandit, metus a venenatis lacinia, felis enim
+                  tincidunt est, condimentum vulputate orci augue eu metus.
+                  <br />
+                  Fusce dictum, nisi et semper ultricies, felis tortor blandit
+                  odio,egestas consequat purus nisi eu est. Nam dapibus, diam<br />
+                  at blandit molestie, dolor dui vulputate ante, a tincidunt leo
+                  turpis quis enim.
+                </p>
+              </div>
+              <div class="review__quote">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <div class="review__name">
+                <p class="review__name">--Nathanael Jaworski--</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid wide">
+            <div class="review">
+              <div class="review__avt">
+                <img
+                  class="review__img"
+                  src="./Assets/customer-feedback/img/avt_customer-3.png"
+                  alt=""
+                />
+              </div>
+              <div class="review__content">
+                <p>
+                  Sed vel urna at dui iaculis gravida. Maecenas pretium, velit
+                  vitae placerat faucibus, velit quam facilisis elit, <br />
+                  sit amet lacinia est est id ligula. Duis feugiat quam non
+                  justo faucibus, in <br />
+                  gravida diam tempor. Nam viverra enim non ipsum ornare,
+                  condimentum blandit diam mattis.
+                </p>
+              </div>
+              <div class="review__quote">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <div class="review__name">
+                <p class="review__name">--Magdalena Valencia--</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="our-product">
+          <div class="grid wide">
+            <span>Latest Arrivals</span>
+            <p>
+              Mirum est notare quam littera gothica, quam nunc putamus parum
+              claram anteposuerit litterarum formas.
+            </p>
+          </div>
+        </div>
+        <div class="lastest-lists">
+          <div class="product-lastest">
+            <div
+              class="product-tab active owl-carousel-1 owl-carousel owl-theme grid wide"
+            >
+              <div class="parent">
+                <div class="product-effect">
+                  <img
+                    class="image product-effect"
+                    src="./Assets/img/oclock-wood.jpg"
+                    alt=""
+                  />
+                  <div class="flex">
+                    <p style="color: #929292; margin-top: 15px">Apple</p>
+                    <div class="star">
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="product-name">
+                    <a href="" class="product__name-link"
+                      >Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a
+                    >
+                  </div>
+                  <div style="display: flex">
+                    <p class="product-price">$78.80</p>
+                    <span
+                      class="old-price"
+                      style="margin-left: 10px; text-decoration: line-through"
+                      >$80.00</span
+                    >
+                  </div>
+                </div>
+                <label class="add-product">
+                  <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                  <a href=""><i class="fa-solid fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-list"></i></a>
+                  <a href=""
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </label>
+              </div>
+              <div class="parent">
+                <div class="product-effect">
+                  <img
+                    class="image"
+                    src="./Assets/img/amzonecloud.jpg"
+                    alt=""
+                  />
+                  <div class="sale-product">
+                    <span>-14%</span>
+                  </div>
+
+                  <div class="flex">
+                    <p style="color: #929292; margin-top: 15px">Apple</p>
+                    <div class="star">
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star star--active"></i>
+                    </div>
+                  </div>
+                  <div class="product-name">
+                    <a href="" class="product__name-link"
+                      >Roush Mustang 4-Piston Black Front Brake Kit</a
+                    >
+                  </div>
+                  <div style="display: flex">
+                    <p class="product-price">$85.80</p>
+                    <span
+                      class="old-price"
+                      style="margin-left: 10px; text-decoration: line-through"
+                      >$140.00</span
+                    >
+                  </div>
+                </div>
+                <label class="add-product">
+                  <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                  <a href=""><i class="fa-solid fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-list"></i></a>
+                  <a href=""
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </label>
+              </div>
+              <div class="parent">
+                <div class="product-effect">
+                  <img class="image" src="./Assets/img/JBL flip.jpg" alt="" />
+                  <div class="flex">
+                    <p style="color: #929292; margin-top: 15px">Sony</p>
+                    <div class="star">
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="product-name">
+                    <a href="" class="product__name-link"
+                      >Koss Porta Pro On Ear Headphones with Case</a
+                    >
+                  </div>
+                  <div style="display: flex">
+                    <p class="product-price">$120</p>
+                  </div>
+                </div>
+                <label class="add-product">
+                  <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                  <a href=""><i class="fa-solid fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-list"></i></a>
+                  <a href=""
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </label>
+              </div>
+              <div class="parent">
+                <div class="product-effect">
+                  <img
+                    class="image"
+                    src="./Assets/img/bluetoothspeaker.jpg"
+                    alt=""
+                  />
+                  <div class="sale-product">
+                    <span>-5%</span>
+                  </div>
+                  <div class="flex">
+                    <p style="color: #929292; margin-top: 15px">Apple</p>
+                    <div class="star">
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="product-name">
+                    <a href="" class="product__name-link"
+                      >Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a
+                    >
+                  </div>
+                  <div style="display: flex">
+                    <p class="product-price">$78.80</p>
+                    <span
+                      class="old-price"
+                      style="margin-left: 10px; text-decoration: line-through"
+                      >$80.00</span
+                    >
+                  </div>
+                </div>
+                <label class="add-product">
+                  <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                  <a href=""><i class="fa-solid fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-list"></i></a>
+                  <a href=""
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </label>
+              </div>
+              <div class="parent">
+                <div class="product-effect">
+                  <img
+                    class="image"
+                    src="./Assets/img/AppleIphone.jpg"
+                    alt=""
+                  />
+                  <div class="sale-product">
+                    <span>-5%</span>
+                  </div>
+                  <div class="flex">
+                    <p style="color: #929292; margin-top: 15px">Apple</p>
+                    <div class="star">
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="product-name">
+                    <a href="" class="product__name-link"
+                      >Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a
+                    >
+                  </div>
+                  <div style="display: flex">
+                    <p class="product-price">$78.80</p>
+                    <span
+                      class="old-price"
+                      style="margin-left: 10px; text-decoration: line-through"
+                      >$80.00</span
+                    >
+                  </div>
+                </div>
+                <label class="add-product">
+                  <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                  <a href=""><i class="fa-solid fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-list"></i></a>
+                  <a href=""
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </label>
+              </div>
+              <div class="parent">
+                <div class="product-effect">
+                  <img
+                    class="image"
+                    src="./Assets/img/beatsSolowireless.jpg"
+                    alt=""
+                  />
+                  <div class="sale-product">
+                    <span>-5%</span>
+                  </div>
+                  <div class="flex">
+                    <p style="color: #929292; margin-top: 15px">Apple</p>
+                    <div class="star">
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star star--active"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                  <div class="product-name">
+                    <a href="" class="product__name-link"
+                      >Sony XBR-55X900E 55-inch 4K HDR Ultra HD</a
+                    >
+                  </div>
+                  <div style="display: flex">
+                    <p class="product-price">$78.80</p>
+                    <span
+                      class="old-price"
+                      style="margin-left: 10px; text-decoration: line-through"
+                      >$80.00</span
+                    >
+                  </div>
+                </div>
+                <label class="add-product">
+                  <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                  <a href=""><i class="fa-solid fa-heart"></i></a>
+                  <a href=""><i class="fa-solid fa-list"></i></a>
+                  <a href=""
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col p-6 t-12 m-12">
+                <div class="black-friday">
+                  <img
+                    class="image"
+                    src="./Assets/img/Blackfriday.jpg"
+                    alt=""
+                  />
+                  <div class="event__text">
+                    <h4>Black Friday</h4>
+                    <h3>
+                      Save Up To <br />
+                      50% Off
+                    </h3>
+                    <a href="">Shop now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col p-6 t-12 m-12">
+                <div class="black-friday m-top">
+                  <img
+                    class="image"
+                    src="./Assets/img/best-Selling.jpg"
+                    alt=""
+                  />
+                  <div class="event__text">
+                    <h4>Best Selling !</h4>
+                    <h3>
+                      Living Room Up <br />
+                      To 70% Off
+                    </h3>
+                    <a href="">Shop now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="policy-block">
+          <div class="grid wide">
+            <div class="row">
+              <div class="col p-4 policy__box">
+                <div class="img">
+                  <img src="./Assets/img/ship.png" alt="" />
+                </div>
+                <div class="policy__box-title">
+                  <a href="">FREE SHIPPING WORLDWIDE</a>
+                </div>
+                <div>
+                  <p>
+                    We offer free shipping via Standard Shipping on orders over
+                    $200.00
+                  </p>
+                </div>
+              </div>
+              <div class="col p-4 policy__box">
+                <div class="img">
+                  <img src="./Assets/img/money_back.png" alt="" />
+                </div>
+                <div class="policy__box-title">
+                  <a href="">Money Back Guarantee</a>
+                </div>
+                <div>
+                  <p>
+                    If you're not satisfied with our product, we'll refund the
+                    purchase price*.
+                  </p>
+                </div>
+              </div>
+              <div class="col p-4 policy__box">
+                <div class="img">
+                  <img src="./Assets/img/support247.png" alt="" />
+                </div>
+                <div class="policy__box-title">
+                  <a href="">online support 24/7 </a>
+                </div>
+                <div>
+                  <p>
+                    Our friendly support team is available to help you 24 hours
+                    a day, seven days a week
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="our-product">
+          <div class="grid wide">
+            <span>Latest Blog Posts</span>
+            <p>
+              Mirum est notare quam littera gothica, quam nunc putamus parum
+              claram anteposuerit litterarum formas.
+            </p>
+          </div>
+        </div>
+        <div class="daily-blog">
+          <div class="grid wide">
+            <div class="blog-list">
+              <div class="row">
+                <div class="col p-4 t-6 m-12">
+                  <div class="blog">
+                    <div class="blog-img">
+                      <img
+                        class="image"
+                        src="./Assets/img/kitchen-blog.jpg"
+                        alt=""
+                      />
+                      <div class="calendar">
+                        <p>Sep</p>
+                        <span> 06</span>
+                      </div>
+                    </div>
+                    <div class="blog-title">
+                      <a href="">Buy Used Engines and Used Transmissions</a>
+                    </div>
+                    <div>
+                      <p class="blog-by">
+                        <span style="color: var(--content-color)">By</span>
+                        Plaza Themes
+                      </p>
+                    </div>
+                    <div class="blog-content">
+                      <p>
+                        It's no secret, engines and transmissions can be very
+                        expensive...
+                      </p>
+                    </div>
+                    <div class="blog-more">
+                      <a href="">Read more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-4 t-6 m-12">
+                  <div class="blog">
+                    <div class="blog-img">
+                      <img
+                        class="image"
+                        src="./Assets/img/livingroom-blog.jpg"
+                        alt=""
+                      />
+                      <div class="calendar">
+                        <p>Oct</p>
+                        <span> 30</span>
+                      </div>
+                    </div>
+                    <div class="blog-title">
+                      <a href=""
+                        >Get Your Car or Truck Ready for the Summer Heat!</a
+                      >
+                    </div>
+                    <div>
+                      <p class="blog-by">
+                        <span style="color: var(--content-color)">By</span>
+                        Plaza Themes
+                      </p>
+                    </div>
+                    <div class="blog-content">
+                      <p>
+                        Summer is beautiful in Colorado but we can get some
+                        very, very, hot daytime temps...
+                      </p>
+                    </div>
+                    <div class="blog-more">
+                      <a class="blog-read" href="">Read more</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col p-4 t-6 m-12">
+                  <div class="blog">
+                    <div class="blog-img">
+                      <img
+                        class="image"
+                        src="./Assets/img/device-blog.jpg"
+                        alt=""
+                      />
+                      <div class="calendar">
+                        <p>Nov</p>
+                        <span> 08</span>
+                      </div>
+                    </div>
+                    <div class="blog-title">
+                      <a href="">Minor Wreck? We Got The Auto Parts!</a>
+                    </div>
+                    <div>
+                      <p class="blog-by">
+                        <span style="color: var(--content-color)">By</span>
+                        Plaza Themes
+                      </p>
+                    </div>
+                    <div class="blog-content">
+                      <p>
+                        It’s winter in Colorado and we’ve had a number of snowy
+                        days and hairy commutes...
+                      </p>
+                    </div>
+                    <div class="blog-more">
+                      <a class="blog-read" href="">Read more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="our-product">
+          <div class="grid wide">
+            <p>Special Ofers For Subscribers</p>
+            <span>Ten Percent Member Discount</span>
+            <p>
+              Subscribe to our newsletters now and stay up to date with new
+              collections, the latest lookbooks and exclusive offers.
+            </p>
+            <div class="subscribe">
+              <div class="subscribe__form">
+                <input
+                  class="subscribe__input"
+                  type="text"
+                  placeholder="Enter you email address here..."
+                />
+                <a class="subscribe__btn" href="">Subscribe</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <footer id="footer">
+        <div class="grid wide">
+          <div class="row" style="display: flex; justify-content: center">
+            <div class="footer__img">
+              <img src="./Assets/img/logo.png" alt="" />
+            </div>
+            <div class="footer__right">
+              <p>Copyright © 2019 PlazaThemes. All Right Reserved.</p>
+            </div>
+            <ul class="footer__socials">
+              <li>
+                <a href=""
+                  ><i class="fa-brands footer__socials-icon fa-facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-brands footer__socials-icon fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-brands footer__socials-icon fa-google"></i
+                ></a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa-brands footer__socials-icon fa-youtube"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
     <!-- Modal header MENU -->
     <div class="modal-menu">
-            <ul class="menuList">
-                <li><a href="">Homee</a></li>
-                <li><a href="">Shop</a></li>
-                <li><a href="">Eyes</a></li>
-                <li><a href="">Lips</a></li>
-                <li><a href="">Face</a></li>
-                <li><a href="">About us</a></li>
-                <li><a href="">Contact us</a></li>
-                <li><a href="">Special</a></li>
-                <li><a href="">Blog</a></li>
-            </ul>
-            <div class="memuClose">
-              <a class="a-closeMenu" onclick="closeMenu();"><i class="fa-solid fa-xmark"></i></a>  
-            </div>
+      <ul class="menuList">
+        <li><a href="">Homee</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">Eyes</a></li>
+        <li><a href="">Lips</a></li>
+        <li><a href="">Face</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Contact us</a></li>
+        <li><a href="">Special</a></li>
+        <li><a href="">Blog</a></li>
+      </ul>
+      <div class="memuClose">
+        <a class="a-closeMenu" onclick="closeMenu();"
+          ><i class="fa-solid fa-xmark"></i
+        ></a>
+      </div>
     </div>
-    <div class="container__overlay" onclick="hideOverlay();"></div>  
-        <!-- MODAL LOGIN/REGISTER FORM -->
+    <div class="container__overlay" onclick="hideOverlay();"></div>
+    <!-- MODAL LOGIN/REGISTER FORM -->
     <div class="modal-login js-modal-login">
-        <div class="modal-form__account">
-            <div class="close-form">
-               <button id="close-form" onclick="closeForm();"><i class="fa-solid fa-xmark close-form__icon"></i></button> 
-            </div>
-            <div class="modal__account">
-                <div class="head-text">
-                    <h2>WELCOME TO EPOS</h2>
-                    <p>I am a returning customer</p>
-                    <div class="flex transform-method">
-                        <button class="transform-login active" onclick="transformLogin()">SIGN IN</button>
-                        <button class="transform-signup"  onclick="transformSignup()">SIGN UP</button>
-                    </div>
-                    </div>
-                    <div>
-                        <!-- FORM LOGIN -->
-                        <form action="" id="form-login" class="form-log active"> 
-                            <div class="form-group">
-                               <label for="login-name">Your name</label>
-                               <input type="text" placeholder="Enter your name" id="login-name">
-                               <span class="form-message"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="login-email">Your email</label>
-                                <input type="text" placeholder="Enter your email" id="login-email">
-                               <span class="form-message"></span>
-                             </div>
-                            <div class="form-log_login flex">
-                                <button id="button-login" type="submit">Login</button>
-                                <a href="">Forget password?</a>
-                            </div>
-                        </form>
-                        <!-- FORM SIGN UP -->
-                        <form action="" id="form-signup" class="form-log">
-                             <div class="form-group">
-                                <label for="name">Your name</label>
-                                <input type="text" placeholder="Enter your name" id="signUp-name">
-                               <span class="form-message"></span>
-                             </div>
-                             <div class="form-group">
-                                 <label for="email">Your email</label>
-                                <input type="text" placeholder="Enter your email" id="signUp-email"> 
-                               <span class="form-message"></span>
-                             </div>
-                             <div class="form-group">
-                                <label for="password">Enter password</label>
-                                <input type="password" placeholder="Enter your name" id="signUp-password">
-                               <span class="form-message"></span>
-                             </div>
-                             <div class="form-group">
-                                <label for="repeat-password">Repeat password</label>
-                                <input type="password" placeholder="Enter your name" id="repeat-password">
-                               <span class="form-message"></span>
-                             </div>
-                             
-                             <div class="form-log_login flex">
-                                 <button id="button-signup"  type="submit">Sign up</button>
-                                 <a href="">Forget password?</a>
-                             </div>
-                        </form>
-                    </div>
-            </div>
+      <div class="modal-form__account">
+        <div class="close-form">
+          <button id="close-form" onclick="closeForm();">
+            <i class="fa-solid fa-xmark close-form__icon"></i>
+          </button>
         </div>
+        <div class="modal__account">
+          <div class="head-text">
+            <h2>WELCOME TO EPOS</h2>
+            <p>I am a returning customer</p>
+            <div class="flex transform-method">
+              <button class="transform-login active" onclick="transformLogin()">
+                SIGN IN
+              </button>
+              <button class="transform-signup" onclick="transformSignup()">
+                SIGN UP
+              </button>
+            </div>
+          </div>
+          <div>
+            <!-- FORM LOGIN -->
+            <form action="" id="form-login" class="form-log active">
+              <div class="form-group">
+                <label for="login-name">Your name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  id="login-name"
+                />
+                <span class="form-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="login-email">Your email</label>
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  id="login-email"
+                />
+                <span class="form-message"></span>
+              </div>
+              <div class="form-log_login flex">
+                <button id="button-login" type="submit">Login</button>
+                <a href="">Forget password?</a>
+              </div>
+            </form>
+            <!-- FORM SIGN UP -->
+            <form action="" id="form-signup" class="form-log">
+              <div class="form-group">
+                <label for="name">Your name</label>
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  id="signUp-name"
+                />
+                <span class="form-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Your email</label>
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  id="signUp-email"
+                />
+                <span class="form-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="password">Enter password</label>
+                <input
+                  type="password"
+                  placeholder="Enter your name"
+                  id="signUp-password"
+                />
+                <span class="form-message"></span>
+              </div>
+              <div class="form-group">
+                <label for="repeat-password">Repeat password</label>
+                <input
+                  type="password"
+                  placeholder="Enter your name"
+                  id="repeat-password"
+                />
+                <span class="form-message"></span>
+              </div>
+
+              <div class="form-log_login flex">
+                <button id="button-signup" type="submit">Sign up</button>
+                <a href="">Forget password?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="back-top">
-        <div class="wrapper-back">
+      <div class="wrapper-back">
         <i class="fa-solid fa-jet-fighter-up"></i>
-        <div> <p>BACK TO TOP</p> </div>
-        </div>
+        <div><p>BACK TO TOP</p></div>
+      </div>
     </div>
     <script src="./Js/const.js"></script>
     <script src="./Js/model.js"></script>
     <script src="./Js/veiw.js"></script>
     <script src="/Js/validator.js"></script>
     <script src="./Js/product.js"></script>
-     <script src="./Js/slider.js"></script>
+    <script src="./Js/slider.js"></script>
     <script src="./Js/evaluate.js"></script>
     <script>
-        // Mong muốn viết xong thì có thể sử dụng lại được, output
-        Validator({
-            // vì mình validator cho cái form này nên phải lấy 
-            //  cái id form này ra để tìm ra các element con
-            form:"#form-signup",
-            errorSelector:'.form-message',
-            rules:[
-                Validator.isRequired('#signUp-name'),
-                Validator.isEmail('#signUp-email'),
-                Validator.isPassword('#signUp-password',6),
-                Validator.isRepeatPassword('#repeat-password',function(){
-                    return document.querySelector('#form-signup #signUp-password').value
-                    
-                })
-            ]
-        })
+      // Mong muốn viết xong thì có thể sử dụng lại được, output
+      Validator({
+        // vì mình validator cho cái form này nên phải lấy
+        //  cái id form này ra để tìm ra các element con
+        form: "#form-signup",
+        errorSelector: ".form-message",
+        rules: [
+          Validator.isRequired("#signUp-name"),
+          Validator.isEmail("#signUp-email"),
+          Validator.isPassword("#signUp-password", 6),
+          Validator.isRepeatPassword("#repeat-password", function () {
+            return document.querySelector(
+              "#form-signup #signUp-password"
+            ).value;
+          }),
+        ],
+      });
     </script>
-</body>
+  </body>
 </html>
